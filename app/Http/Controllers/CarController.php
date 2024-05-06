@@ -40,8 +40,9 @@ class CarController extends Controller
     
         // Xử lý việc lưu file ảnh và lấy đường dẫn đã lưu
         if ($request->hasFile('image')) {
-            $imagePath = $request->file('image')->store('public/images');
-            $imageName = basename($imagePath); // Lấy tên file ảnh
+            $image = $request->file('image');
+            $imageName = time().'.'.$image->getClientOriginalExtension();
+            $image->move(public_path('images'), $imageName);
         }
      //Nhớ chạy lệnh này trong cmder
         // php artisan storage:link
