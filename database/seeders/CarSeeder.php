@@ -22,6 +22,8 @@ class CarSeeder extends Seeder
             'price' => '1105000000',
             'description' => 'Toyota Camry 2024 là một mẫu sedan cỡ trung đẳng cấp, chiếc xe gắn liền với nhiều cơ quan công quyền với không gian rộng, nhiều trang bị tiện nghị cho hàng ghế thứ hai, doanh số mẫu này luôn ổn định mặc dù có giai đoạn đi xuống nhưng Camry vẫn là mẫu xe được yêu thích trong phân khúc sedan cỡ D.',
             'image' => '../images/camry.png',
+            'seats' => '5',
+            'fuel' => 'Gasonline'
         ]);
         DB::table('cars')->insert([
             'name' => 'CAMRY',
@@ -31,6 +33,8 @@ class CarSeeder extends Seeder
             'price' => '1105000000',
             'description' => 'Toyota Camry 2024 là một mẫu sedan cỡ trung đẳng cấp, chiếc xe gắn liền với nhiều cơ quan công quyền với không gian rộng, nhiều trang bị tiện nghị cho hàng ghế thứ hai, doanh số mẫu này luôn ổn định mặc dù có giai đoạn đi xuống nhưng Camry vẫn là mẫu xe được yêu thích trong phân khúc sedan cỡ D.',
             'image' => '../images/camry.png',
+            'seats' => '5',
+            'fuel' => 'Gasonline'
         ]);
         DB::table('cars')->insert([
             'name' => 'CAMRY',
@@ -40,6 +44,8 @@ class CarSeeder extends Seeder
             'price' => '1105000000',
             'description' => 'Toyota Camry 2024 là một mẫu sedan cỡ trung đẳng cấp, chiếc xe gắn liền với nhiều cơ quan công quyền với không gian rộng, nhiều trang bị tiện nghị cho hàng ghế thứ hai, doanh số mẫu này luôn ổn định mặc dù có giai đoạn đi xuống nhưng Camry vẫn là mẫu xe được yêu thích trong phân khúc sedan cỡ D.',
             'image' => '../images/camry.png',
+            'seats' => '5',
+            'fuel' => 'Gasonline'
         ]);
         DB::table('cars')->insert([
             'name' => 'CAMRY',
@@ -49,6 +55,8 @@ class CarSeeder extends Seeder
             'price' => '1105000000',
             'description' => 'Toyota Camry 2024 là một mẫu sedan cỡ trung đẳng cấp, chiếc xe gắn liền với nhiều cơ quan công quyền với không gian rộng, nhiều trang bị tiện nghị cho hàng ghế thứ hai, doanh số mẫu này luôn ổn định mặc dù có giai đoạn đi xuống nhưng Camry vẫn là mẫu xe được yêu thích trong phân khúc sedan cỡ D.',
             'image' => '../images/camry.png',
+            'seats' => '5',
+            'fuel' => 'Gasonline'
         ]);
     }
 }
