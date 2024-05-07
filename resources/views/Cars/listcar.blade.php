@@ -20,16 +20,18 @@
                                         <strong>Model:</strong> {{ $car->model }}<br>
                                         <strong>Year:</strong> {{ $car->year }}<br>
                                         <strong>Price:</strong> {{ number_format($car->price) }}<br>
+                                        <strong>Seats:</strong> {{ $car->seats }}<br> 
+                                        <strong>Fuel:</strong> {{ $car->fuel }}<br> 
                                         <strong>Description:</strong> {{ $car->description }}
                                     </p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a href="#" class="btn btn-sm btn-outline-primary">View</a>
-                                            <a href="#" class="btn btn-sm btn-outline-secondary">Edit</a>
-                                            <form method="POST">
+                                        <a href="{{ route('cars.show', ['id' => $car->id]) }}" class="btn btn-primary btn-sm m-2">View</a>
+                                        <a href="{{ route('cars.edit', ['id' => $car->id]) }}" class="btn btn-primary btn-sm m-2">Edit</a>
+                                            <form method="POST" action="{{ route('cars.delete', ['id' => $car->id]) }}">
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="btn btn-sm btn-outline-danger" onclick="return confirm('Are you sure you want to delete this car?')">Delete</button>
+                                                <button type="submit" class="btn btn-danger btn-sm m-2" onclick="return confirm('Are you sure you want to delete this car?')">Delete</button>
                                             </form>
                                         </div>
                                     </div>
