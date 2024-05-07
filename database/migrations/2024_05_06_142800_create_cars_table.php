@@ -20,6 +20,8 @@ return new class extends Migration
             $table->decimal('price', 15, 2); 
             $table->text('description');
             $table->string('image'); 
+            $table->integer('seats'); 
+            $table->string('fuel');
             $table->timestamps();
         });
     }
