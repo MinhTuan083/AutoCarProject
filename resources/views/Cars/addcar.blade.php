@@ -8,7 +8,7 @@
                 <div class="card">
                     <h3 class="card-header text-center">Add New Car</h3>
                     <div class="card-body">
-                    <form method="POST" action="{{ route('cars.store') }}" enctype="multipart/form-data">
+                        <form method="POST" action="{{ route('cars.store') }}" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group mb-3">
                                 <input type="text" placeholder="Name" id="name" class="form-control" name="name" required autofocus>
@@ -37,6 +37,25 @@
                             <div class="form-group mb-3">
                                 <input type="text" placeholder="Price" id="price" class="form-control" name="price" required>
                                 @error('price')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="text" placeholder="Seats" id="seats" class="form-control" name="seats" required>
+                                @error('seats')
+                                    <span class="text-danger">{{ $message }}</span>
+                                @enderror
+                            </div>
+                            <div class="form-group mb-3">
+                                <select id="fuel" class="form-control" name="fuel" required>
+                                    <option value="" disabled selected>Select Fuel</option>
+                                    <option value="Gasolie">Gasolie</option>
+                                    <option value="Electric">Electric</option>
+                                    <option value="Oil">Oil</option>
+                                    <option value="Hybrid">Hybrid</option>
+
+                                </select>
+                                @error('fuel')
                                     <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
