@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Car;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use App\Models\Brand;
 
 class CarController extends Controller
 {
@@ -13,14 +14,14 @@ class CarController extends Controller
      */
     public function index()
     {
-        return view('cars.dashboard');
+        return view('dashboard');
     }
 
     public function addCar()
     {
-        return view('cars.addcar');
-    }
-
+        $brands = Brand::all();
+        return view('cars.addcar', ['brands' => $brands]);
+    }    
     /**
      * Store a newly created car in storage.
      */
@@ -47,7 +48,7 @@ class CarController extends Controller
 
         $car = new Car();
         $car->name = $request->name;
-        $car->brand = $request->brand;
+        $car->brand= $request->brand; 
         $car->model = $request->model;
         $car->year = $request->year;
         $car->price = $request->price;
@@ -84,7 +85,7 @@ class CarController extends Controller
         $car->delete();
     
         // Chuyển hướng về trang danh sách xe với thông báo thành công
-        return redirect("list")->with('message', 'Car deleted successfully');
+        return redirect("listbrand")->with('message', 'Car deleted successfully');
     }
     
     public function showCar($id)
@@ -138,15 +139,16 @@ class CarController extends Controller
 
     $car->save();
 
-    return redirect("list")->with('message','Car updated successfully');
+    return redirect("listcar")->with('message','Car updated successfully');
 }
 
 public function editCar($id)
 {
     $car = Car::findOrFail($id);
-    return view('cars.edit', compact('car'));
+    $brands = Brand::all(); // Lấy danh sách các thương hiệu
+    return view('cars.edit', compact('car', 'brands')); // Truyền biến $brands vào view
+}
+
 }
 
 
-
-}

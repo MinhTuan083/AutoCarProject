@@ -24,4 +24,8 @@ class Car extends Model
     {
         return $this->belongsToMany(User::class);
     }
+    public function brand(): BelongsTo
+    {
+        return $this->belongsTo(Brand::class);
+    }
 }
