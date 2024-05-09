@@ -23,7 +23,7 @@
                         bottom: 0;
                         left: 0;
                         width: 100%;
-                        background-color: rgba(#ffff, 0, 0, 0.7); 
+                        background-color: rgba(255, 255, 255, 0.7); 
                         transform: translateY(100%);
                         transition: transform 0.3s ease-in-out;
                         padding: 1rem;
@@ -53,6 +53,12 @@
                     .card-overlay:hover .card-actions {
                         opacity: 1;
                     }
+
+                    /* Đảm bảo rằng tất cả hình ảnh đều có kích thước cố định và không bị bóp méo */
+                    .card-img-top {
+                        width: 100%;
+                        height: auto;
+                    }
                 </style>
                 <div class="card">
                     <h3 class="card-header text-center bg-dark text-light">List of Cars</h3>
@@ -76,7 +82,7 @@
                                     <div class="card-body text-center">
                                         <h5 class="card-title">{{ $car->name }}</h5>
                                         <p class="card-text">
-                                            <strong>Price:</strong> ${{ number_format($car->price) }}<br>
+                                        <strong>Price:</strong> {{ number_format($car->price) }} VND<br>
                                         </p>
                                     </div>
                                 </div>

@@ -115,15 +115,92 @@ class CarSeeder extends Seeder
             'fuel' => 'Gasoline'
         ]);
         DB::table('cars')->insert([
-            'name' => 'VIOS',
-            'brand' => 'TOYOTA',
-            'model' => '1.5G CVT',
+            'name' => 'HYUNDAI GRAND i10',
+            'brand' => 'HYUNDAI',
+            'model' => '1.2 AT',
             'year' => '2024',
-            'price' => '545000000',
-            'description' => 'Vios là một mẫu xe sedan hạng nhỏ của Toyota, được thiết kế để đáp ứng nhu cầu vận chuyển hàng ngày và tiết kiệm nhiên liệu. Xe có kích thước nhỏ gọn và dễ vận hành, phù hợp cho di chuyển trong đô thị. Vios được trang bị động cơ hiệu quả và hệ thống truyền động tiết kiệm nhiên liệu, giúp giảm thiểu chi phí vận hành. Nội thất của Vios mang đến sự thoải mái và tiện nghi, với không gian đủ rộng cho hành khách và các tính năng hiện đại như hệ thống giải trí và hệ thống điều hòa không khí. Vios cũng được trang bị các tính năng an toàn như hệ thống phanh ABS, túi khí và hỗ trợ đỗ xe. Với sự kết hợp giữa tiện ích và hiệu suất, Vios là một lựa chọn phổ biến trong phân khúc xe sedan nhỏ, phục vụ nhu cầu cá nhân và gia đình.',
-            'image' => '../images/vios.png',
+            'price' => '455000000',
+            'description' => 'Với kích ngoại hình và giá bán hợp lý. Grand I10 Sedan là lựa chọn tốt cho khu vực đô thị với khả năng di chuyển linh hoạt, khả năng tiêu hao nhiên liệu thấp và đặc biệt là có thể mang vác khá nhiều hành lý khi di chuyển.',
+            'image' => '../images/hyundai-i10-sedan.png',
             'seats' => '5',
             'fuel' => 'Gasoline'
         ]);
+        DB::table('cars')->insert([
+            'name' => 'ACCENT',
+            'brand' => 'HYUNDAI',
+            'model' => '1.4 MT',
+            'year' => '2024',
+            'price' => '472000000',
+            'description' => 'New Hyundai Accent được thiết kế tạo sự cân bằng hoàn hảo giữa thể thao và thanh lịch, cùng khả năng vận hành mạnh mẽ và dáng vẻ vô cùng cuốn hút.',
+            'image' => '../images/accent.png',
+            'seats' => '5',
+            'fuel' => 'Gasoline'
+        ]);
+        DB::table('cars')->insert([
+            'name' => 'TUCSON',
+            'brand' => 'HYUNDAI',
+            'model' => '2.0 Oil',
+            'year' => '2024',
+            'price' => '959000000',
+            'description' => '.',
+            'image' => '../images/tucson.png',
+            'seats' => '7',
+            'fuel' => 'Oil'
+        ]);
+        DB::table('cars')->insert([
+            'name' => 'SANTAFE',
+            'brand' => 'HYUNDAI',
+            'model' => '2.2 Oil',
+            'year' => '2024',
+            'price' => '1269000000',
+            'description' => '.',
+            'image' => '../images/santafe.png',
+            'seats' => '7',
+            'fuel' => 'Oil'
+        ]);
+        DB::table('cars')->insert([
+            'name' => 'ELANTRA',
+            'brand' => 'HYUNDAI',
+            'model' => '2.0 AT',
+            'year' => '2024',
+            'price' => '729000000',
+            'description' => '.',
+            'image' => '../images/elantra.png',
+            'seats' => '7',
+            'fuel' => 'Gasoline'
+        ]);
+        DB::table('cars')->insert([
+            'name' => 'PALISADE',
+            'brand' => 'HYUNDAI',
+            'model' => 'Palisade Prestige 7 seats',
+            'year' => '2024',
+            'price' => '1559000000',
+            'description' => '.',
+            'image' => '../images/palisade.jpg',
+            'seats' => '7',
+            'fuel' => 'Gasoline'
+        ]); 
+        DB::table('cars')->insert([
+            'name' => 'CUSTIN',
+            'brand' => 'HYUNDAI',
+            'model' => 'Custin 2.0T-GDi',
+            'year' => '2024',
+            'price' => '999000000',
+            'description' => '.',
+            'image' => '../images/custin.jpg',
+            'seats' => '7',
+            'fuel' => 'Gasoline'
+        ]); 
+        DB::table('cars')->insert([
+            'name' => 'STARGAZER',
+            'brand' => 'HYUNDAI',
+            'model' => '1.5 AT',
+            'year' => '2024',
+            'price' => '685000000',
+            'description' => '.',
+            'image' => '../images/stargazer.png',
+            'seats' => '7',
+            'fuel' => 'Gasoline'
+        ]); 
     }
 }
