@@ -1,73 +1,86 @@
 @extends('dashboard')
 
 @section('content')
-<main class="signup-form">
+<main class="update-car-form">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-4">
-                <div class="card">
-                    <h3 class="card-header text-center">Update Car</h3>
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <h3 class="card-header text-center bg-dark text-light">Update Car</h3>
                     <div class="card-body">
                         <form method="POST" action="{{ route('cars.update', ['id' => $car->id]) }}" enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
-                            <div class="form-group mb-3">
-                                <input type="text" placeholder="Name" id="name" class="form-control" name="name" value="{{ $car->name }}" required autofocus>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" value="{{ $car->name }}" required autofocus>
                                 @error('name')
-                                    <span class="text-danger">{{ $message }}</span>
+                                    <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
-                            <div class="form-group mb-3">
-                                <input type="text" placeholder="Brand" id="brand" class="form-control" name="brand" value="{{ $car->brand }}" required>
+                            <div class="mb-3">
+                                <label for="brand" class="form-label">Brand</label>
+                                <select id="brand" class="form-control" name="brand" required>
+                                    <option value="" disabled>Select Brand</option>
+                                    @foreach($brands as $brand)
+                                        <option value="{{ $brand->name }}">{{ $brand->name }}</option>
+                                    @endforeach
+                                </select>
                                 @error('brand')
-                                    <span class="text-danger">{{ $message }}</span>
+                                    <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
-                            <div class="form-group mb-3">
-                                <input type="text" placeholder="Model" id="model" class="form-control" name="model" value="{{ $car->model }}" required>
+                            <div class="mb-3">
+                                <label for="model" class="form-label">Model</label>
+                                <input type="text" class="form-control" id="model" name="model" value="{{ $car->model }}" required>
                                 @error('model')
-                                    <span class="text-danger">{{ $message }}</span>
+                                    <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
-                            <div class="form-group mb-3">
-                                <input type="number" placeholder="Year" id="year" class="form-control" name="year" value="{{ $car->year }}" required>
+                            <div class="mb-3">
+                                <label for="year" class="form-label">Year</label>
+                                <input type="number" class="form-control" id="year" name="year" value="{{ $car->year }}" required>
                                 @error('year')
-                                    <span class="text-danger">{{ $message }}</span>
+                                    <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
-                            <div class="form-group mb-3">
-                                <input type="number" placeholder="Price" id="price" class="form-control" name="price" value="{{ $car->price }}" required>
+                            <div class="mb-3">
+                                <label for="price" class="form-label">Price</label>
+                                <input type="text" class="form-control" id="price" name="price" value="{{ $car->price }}" required>
                                 @error('price')
-                                    <span class="text-danger">{{ $message }}</span>
+                                    <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
-                            <div class="form-group mb-3">
-                                <textarea placeholder="Description" id="description" class="form-control" name="description" required>{{ $car->description }}</textarea>
+                            <div class="mb-3">
+                                <label for="description" class="form-label">Description</label>
+                                <textarea class="form-control" id="description" name="description" style="height: 100px;" required>{{ $car->description }}</textarea>
                                 @error('description')
-                                    <span class="text-danger">{{ $message }}</span>
+                                    <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
-                            <div class="form-group mb-3">
-                                <label for="image">Choose Car Image</label>
-                                <input type="file" id="image" class="form-control" name="image" accept="image/*" required>
+                            <div class="mb-3">
+                                <label for="image" class="form-label">Choose Car Image</label>
+                                <input type="file" class="form-control" id="image" name="image" accept="image/*" required>
                                 @error('image')
-                                    <span class="text-danger">{{ $message }}</span>
+                                    <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
-                            <div class="form-group mb-3">
-                                <input type="number" placeholder="Seats" id="seats" class="form-control" name="seats" value="{{ $car->seats }}" required>
+                            <div class="mb-3">
+                                <label for="seats" class="form-label">Seats</label>
+                                <input type="number" class="form-control" id="seats" name="seats" value="{{ $car->seats }}" required>
                                 @error('seats')
-                                    <span class="text-danger">{{ $message }}</span>
+                                    <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
-                            <div class="form-group mb-3">
-                                <input type="text" placeholder="Fuel" id="fuel" class="form-control" name="fuel" value="{{ $car->fuel }}" required>
+                            <div class="mb-3">
+                                <label for="fuel" class="form-label">Fuel</label>
+                                <input type="text" class="form-control" id="fuel" name="fuel" value="{{ $car->fuel }}" required>
                                 @error('fuel')
-                                    <span class="text-danger">{{ $message }}</span>
+                                    <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
-                            <div class="form-group mb-3">
-                                <button type="submit" class="btn btn-dark btn-block">Update</button>
+                            <div class="mb-3 mt-4 text-center">
+                                <button type="submit" class="btn btn-dark btn-lg btn-update">Update</button>
                             </div>
                         </form>
                     </div>
@@ -75,5 +88,10 @@
             </div>
         </div>
     </div>
+    <style>
+        .btn-update {
+    width: 300px; /* Điều chỉnh chiều rộng theo mong muốn */
+}
+    </style>
 </main>
 @endsection
