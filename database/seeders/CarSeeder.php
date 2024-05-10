@@ -202,5 +202,38 @@ class CarSeeder extends Seeder
             'seats' => '7',
             'fuel' => 'Gasoline'
         ]); 
+        DB::table('cars')->insert([
+            'name' => 'XPANDER',
+            'brand' => 'MITSUBISHI',
+            'model' => 'AT PREMINUM',
+            'year' => '2024',
+            'price' => '658000000',
+            'description' => '.',
+            'image' => '../images/xpander.jpg',
+            'seats' => '7',
+            'fuel' => 'Gasoline'
+        ]);
+        DB::table('cars')->insert([
+            'name' => 'PAJERO SPORT',
+            'brand' => 'MITSUBISHI',
+            'model' => 'DIESEL 4X4 AT',
+            'year' => '2024',
+            'price' => '1365000000',
+            'description' => '.',
+            'image' => '../images/pajerosport.jpg',
+            'seats' => '7',
+            'fuel' => 'Oil'
+        ]);  
+        DB::table('cars')->insert([
+            'name' => ' OUTLANDER',
+            'brand' => 'MITSUBISHI',
+            'model' => '2.0 CVT',
+            'year' => '2024',
+            'price' => '825000000',
+            'description' => '.',
+            'image' => '../images/outlander.jpg',
+            'seats' => '7',
+            'fuel' => 'Gasoline'
+        ]);  
     }
 }
