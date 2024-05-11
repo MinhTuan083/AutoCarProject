@@ -90,7 +90,7 @@
     </div>
     <style>
         .btn-update {
-    width: 300px; /* Điều chỉnh chiều rộng theo mong muốn */
+    width: 300px; 
 }
     </style>
 </main>

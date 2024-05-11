@@ -234,6 +234,139 @@ class CarSeeder extends Seeder
             'image' => '../images/outlander.jpg',
             'seats' => '7',
             'fuel' => 'Gasoline'
-        ]);  
+        ]);
+        DB::table('cars')->insert([
+            'name' => ' TRITON',
+            'brand' => 'MITSUBISHI',
+            'model' => '4x4 AT ATHLETE',
+            'year' => '2024',
+            'price' => '905000000',
+            'description' => '.',
+            'image' => '../images/triton.jpg',
+            'seats' => '5',
+            'fuel' => 'Oil'
+        ]);
+        DB::table('cars')->insert([
+            'name' => ' ATTRAGE',
+            'brand' => 'MITSUBISHI',
+            'model' => 'MT',
+            'year' => '2024',
+            'price' => '380000000',
+            'description' => '.',
+            'image' => '../images/attrage.jpeg',
+            'seats' => '4',
+            'fuel' => 'Gasoline'
+        ]);
+        DB::table('cars')->insert([
+            'name' => ' XFORCE',
+            'brand' => 'MITSUBISHI',
+            'model' => 'EXCEED',
+            'year' => '2024',
+            'price' => '640000000',
+            'description' => '.',
+            'image' => '../images/xforce.jpg',
+            'seats' => '5',
+            'fuel' => 'Gasoline'
+        ]);
+        DB::table('cars')->insert([
+            'name' => 'ALMERA',
+            'brand' => 'NISSAN',
+            'model' => 'CVT',
+            'year' => '2024',
+            'price' => '539000000',
+            'description' => '.',
+            'image' => '../images/almera.jpg',
+            'seats' => '4',
+            'fuel' => 'Gasoline'
+        ]);
+        DB::table('cars')->insert([
+            'name' => 'KICKS',
+            'brand' => 'NISSAN',
+            'model' => 'E-POWER',
+            'year' => '2024',
+            'price' => '789000000',
+            'description' => '.',
+            'image' => '../images/kicks.jpg',
+            'seats' => '5',
+            'fuel' => 'Gasoline'
+        ]);
+
+        DB::table('cars')->insert([
+            'name' => 'NAVARA',
+            'brand' => 'NISSAN',
+            'model' => 'CVT',
+            'year' => '2024',
+            'price' => '699000000',
+            'description' => '.',
+            'image' => '../images/navara.jpg',
+            'seats' => '5',
+            'fuel' => 'Oil'
+        ]);                                                                  
+        DB::table('cars')->insert([
+            'name' => 'MORNING',
+            'brand' => 'KIA',
+            'model' => 'PREMINUM HATCHBACK',
+            'year' => '2024',
+            'price' => '349000000',
+            'description' => '.',
+            'image' => '../images/morning.jpg',
+            'seats' => '4',
+            'fuel' => 'Gasoline'
+        ]);
+        DB::table('cars')->insert([
+            'name' => 'SOLUTO',
+            'brand' => 'KIA',
+            'model' => 'AT DELUXE',
+            'year' => '2024',
+            'price' => '386000000',
+            'description' => '.',
+            'image' => '../images/soluto.jpg',
+            'seats' => '4',
+            'fuel' => 'Gasoline'
+        ]);
+        DB::table('cars')->insert([
+            'name' => 'K3',
+            'brand' => 'KIA',
+            'model' => 'TURBO GT',
+            'year' => '2024',
+            'price' => '549000000',
+            'description' => '.',
+            'image' => '../images/k3.jpg',
+            'seats' => '5',
+            'fuel' => 'Gasoline'
+        ]);
+        DB::table('cars')->insert([
+            'name' => 'K3',
+            'brand' => 'KIA',
+            'model' => '2.5 GT-LINE',
+            'year' => '2024',
+            'price' => '859000000',
+            'description' => '.',
+            'image' => '../images/k5.jpg',
+            'seats' => '5',
+            'fuel' => 'Gasoline'
+        ]);     
+        DB::table('cars')->insert([
+            'name' => 'K3',
+            'brand' => 'KIA',
+            'model' => '2.5 GT-LINE',
+            'year' => '2024',
+            'price' => '859000000',
+            'description' => '.',
+            'image' => '../images/k5.jpg',
+            'seats' => '5',
+            'fuel' => 'Gasoline'
+        ]);
+        DB::table('cars')->insert([
+            'name' => 'SONET',
+            'brand' => 'KIA',
+            'model' => '1.5 LUXURY',
+            'year' => '2024',
+            'price' => '519000000',
+            'description' => '.',
+            'image' => '../images/sonet.jpg',
+            'seats' => '5',
+            'fuel' => 'Gasoline'
+        ]);                                                                                                                                                                    
     }
 }
