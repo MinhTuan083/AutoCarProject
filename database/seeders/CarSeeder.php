@@ -367,6 +367,61 @@ class CarSeeder extends Seeder
             'image' => '../images/sonet.jpg',
             'seats' => '5',
             'fuel' => 'Gasoline'
-        ]);                                                                                                                                                                    
+        ]);       
+        DB::table('cars')->insert([
+            'name' => 'SELTOS',
+            'brand' => 'KIA',
+            'model' => '1.4 LUXURY',
+            'year' => '2024',
+            'price' => '599000000',
+            'description' => '.',
+            'image' => '../images/seltos.jpg',
+            'seats' => '5',
+            'fuel' => 'Gasoline'
+        ]);       
+        DB::table('cars')->insert([
+            'name' => 'SPORTAGE',
+            'brand' => 'KIA',
+            'model' => '2.0 LUXURY',
+            'year' => '2024',
+            'price' => '799000000',
+            'description' => '.',
+            'image' => '../images/sportage.jpg',
+            'seats' => '5',
+            'fuel' => 'Gasoline'
+        ]);    
+        DB::table('cars')->insert([
+            'name' => 'SORENTO',
+            'brand' => 'KIA',
+            'model' => '2.2D LUXURY',
+            'year' => '2024',
+            'price' => '979000000',
+            'description' => '.',
+            'image' => '../images/sorento.jpg',
+            'seats' => '7',
+            'fuel' => 'Gasoline'
+        ]);
+        DB::table('cars')->insert([
+            'name' => 'CARNIVAL',
+            'brand' => 'KIA',
+            'model' => '2.2D LUXURY',
+            'year' => '2024',
+            'price' => '1169000000',
+            'description' => '.',
+            'image' => '../images/carnival.jpg',
+            'seats' => '7',
+            'fuel' => 'Gasoline'
+        ]);
+        DB::table('cars')->insert([
+            'name' => 'CARENS',
+            'brand' => 'KIA',
+            'model' => '1.5 MT DELUXE',
+            'year' => '2024',
+            'price' => '589000000',
+            'description' => '.',
+            'image' => '../images/carens.jpg',
+            'seats' => '5',
+            'fuel' => 'Gasoline'
+        ]);                                                                                                                                                             
     }
 }
