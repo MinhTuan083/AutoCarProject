@@ -9,13 +9,17 @@
                 <style>
                     .card {
                         border: none !important;
-                        transition: transform 0.3s ease-in-out;
                         position: relative;
                         overflow: hidden;
                     }
 
-                    .card:hover {
-                        transform: scale(1.05);
+                    /* Áp dụng hiệu ứng transform khi hover cho card bên trong */
+                    .card .card {
+                        transition: transform 0.3s ease-in-out;
+                    }
+
+                    .card .card:hover {
+                        transform: scale(1.15);
                     }
 
                     .card-overlay {
@@ -35,10 +39,6 @@
                         transform: translateY(-20px);
                         opacity: 1;
                         pointer-events: auto;
-                    }
-
-                    .card-body {
-                        padding: 1.25rem;
                     }
 
                     .card-actions {
@@ -62,8 +62,8 @@
                 </style>
                 <div class="card">
                     <h3 class="card-header text-center bg-dark text-light">List of Cars</h3>
-                    <div class="card-body mt-5">
-                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="card-body mt-5 ">
+                        <div class="row row-cols-1 row-cols-md-3 g-4 ">
                             @foreach($cars as $car)
                             <div class="col">
                                 <div class="card">
