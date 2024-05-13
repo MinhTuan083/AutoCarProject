@@ -21,7 +21,7 @@ class CarSeeder extends Seeder
             'model' => '2.0Q',
             'year' => '2024',
             'price' => '1105000000',
-            'description' => 'Toyota Camry 2024 là một mẫu sedan cỡ trung đẳng cấp, chiếc xe gắn liền với nhiều cơ quan công quyền với không gian rộng, nhiều trang bị tiện nghị cho hàng ghế thứ hai, doanh số mẫu này luôn ổn định mặc dù có giai đoạn đi xuống nhưng Camry vẫn là mẫu xe được yêu thích trong phân khúc sedan cỡ D.',
+            'description' => 'Toyota Camry - sedan đáng tin cậy và phổ biến. Với động cơ mạnh mẽ, tiết kiệm nhiên liệu và thiết kế sang trọng, Camry hấp dẫn với dải đèn LED sáng bóng và nội thất tinh tế. Hệ thống giải trí và an toàn hiện đại, kết hợp với tính năng kết nối thông minh, làm cho Camry trở thành lựa chọn hàng đầu trong phân khúc sedan.            ',
             'image' => '../images/camry.png',
             'seats' => '5',
             'fuel' => 'Gasonline'
@@ -32,7 +32,7 @@ class CarSeeder extends Seeder
             'model' => '1.8Q',
             'year' => '2024',
             'price' => '725000000',
-            'description' => 'Corolla Altis là một dòng xe sedan hạng trung của hãng Toyota. Xe được thiết kế với vẻ ngoài sang trọng và hiện đại, kết hợp giữa đường nét mượt mà và chi tiết tinh tế. Corolla Altis được trang bị nhiều tính năng tiên tiến như hệ thống giải trí đa phương tiện, hệ thống điều hòa không khí tự động và các tính năng an toàn như hệ thống phanh ABS và túi khí. Xe có sự lựa chọn động cơ xăng từ 1.6L đến 2.0L, đáp ứng nhu cầu vận hành và tiết kiệm nhiên liệu. Với độ bền, đẳng cấp và sự phổ biến trên toàn cầu, Corolla Altis là một lựa chọn ưu việt cho những người tìm kiếm một chiếc sedan đáng tin cậy và tiện nghi.',
+            'description' => 'Toyota Corolla Altis - Mẫu sedan đáng tin cậy và hiện đại của Toyota. Với hiệu suất mạnh mẽ, thiết kế đẳng cấp và tính năng tiện ích, Altis thu hút người dùng bởi sự linh hoạt và tiết kiệm.            ',
             'image' => '../images/corolla_altis.png',
             'seats' => '5',
             'fuel' => 'Gasonline'
@@ -43,7 +43,7 @@ class CarSeeder extends Seeder
             'model' => '2.4AT 4X2',
             'year' => '2024',
             'price' => ' 1055000000 ',
-            'description' => 'Fortuner là một dòng xe SUV hạng trung của Toyota, với thiết kế mạnh mẽ và khả năng vận hành off-road ấn tượng. Xe được trang bị động cơ mạnh, hệ dẫn động 4 bánh và hệ thống treo linh hoạt, giúp vượt qua địa hình khó khăn một cách dễ dàng. Nội thất rộng rãi và tiện nghi của Fortuner mang đến sự thoải mái cho hành khách. Với tính năng an toàn như hệ thống phanh ABS, túi khí đa điểm và hỗ trợ khởi hành ngang dốc, Fortuner đảm bảo sự an tâm khi di chuyển. Với sự kết hợp hoàn hảo giữa khả năng off-road và tiện nghi, Fortuner là lựa chọn phổ biến trong phân khúc SUV, phục vụ nhu cầu khám phá và cuộc sống đa dụng của người lái.',
+            'description' => 'Toyota Fortuner - Mẫu SUV phổ biến của Toyota. Sức mạnh động cơ, khả năng vận hành off-road, và thiết kế mạnh mẽ là những điểm nổi bật. Nội thất tiện nghi và hệ thống an toàn cao cấp làm cho Fortuner trở thành lựa chọn ưa thích trong phân khúc SUV.            ',
             'image' => '../images/fortuner.png',
             'seats' => '7',
             'fuel' => 'Oil'
@@ -54,7 +54,7 @@ class CarSeeder extends Seeder
             'model' => '2.4L 4X2 AT',
             'year' => '2024',
             'price' => '825000000',
-            'description' => 'Hilux là một dòng xe bán tải hạng trung của Toyota, nổi tiếng với độ bền và khả năng vận hành mạnh mẽ. Xe được thiết kế để đối phó với mọi điều kiện địa hình và tải trọng, với khung gầm chắc chắn và hệ thống treo linh hoạt. Hilux được trang bị động cơ mạnh mẽ và hệ dẫn động 4 bánh, mang lại khả năng vượt qua các điều kiện địa hình khó khăn. Ngoài ra, nội thất của Hilux cũng được thiết kế tiện nghi và chất lượng, đáp ứng nhu cầu của người sử dụng. Với sự kết hợp giữa độ bền, khả năng vận hành và tiện nghi, Hilux là một lựa chọn phổ biến trong phân khúc xe bán tải, phục vụ nhu cầu công việc và phiêu lưu của người lái.',
+            'description' => 'Toyota Hilux - Mẫu xe bán tải phổ biến và đáng tin cậy của Toyota. Sức mạnh động cơ, khả năng chịu tải cao và khả năng vận hành off-road vượt trội là điểm mạnh của Hilux. Thiết kế bền bỉ, nội thất tiện nghi và tính năng an toàn làm cho Hilux trở thành sự lựa chọn ưa thích cho những công việc đòi hỏi sức mạnh và đáng tin cậy.            ',
             'image' => '../images/hilux.png',
             'seats' => '5',
             'fuel' => 'Oil'
@@ -65,7 +65,7 @@ class CarSeeder extends Seeder
             'model' => 'LUXURY',
             'year' => '2024',
             'price' => '4370000000',
-            'description' => 'Alphard Luxury là một phiên bản cao cấp của mẫu xe MPV Alphard của Toyota, mang đến trải nghiệm vượt trội về cảm giác lái và tiện nghi. Xe được thiết kế với ngoại hình sang trọng và đẳng cấp, với các chi tiết nội thất và ngoại thất được tinh chỉnh để tạo ra không gian xa hoa và thoải mái. Alphard Luxury đi kèm với các tính năng tiện ích cao cấp như ghế da cao cấp, hệ thống âm thanh vòm, hệ thống điều hòa tự động đa vùng và hệ thống giải trí hàng ghế sau. Ngoài ra, Alphard Luxury cũng được trang bị các tính năng an toàn như hệ thống cảnh báo va chạm, hệ thống hỗ trợ khởi hành ngang dốc và hệ thống kiểm soát hành trình. Với sự kết hợp giữa sang trọng, tiện nghi và hiệu suất vận hành, Alphard Luxury là một lựa chọn tuyệt vời cho những ai đang tìm kiếm một chiếc xe MPV cao cấp và đẳng cấp.',
+            'description' => 'Toyota Alphard - Một mẫu xe MPV cao cấp và sang trọng của Toyota. Alphard nổi bật với thiết kế đẳng cấp, nội thất rộng rãi và tiện nghi, cùng với các tính năng an toàn và giải trí hiện đại. Sức mạnh động cơ và khả năng vận hành êm ái làm cho Alphard trở thành sự lựa chọn ưa thích cho những gia đình lớn và những chuyến đi dài hành trình.            ',
             'image' => '../images/alphard_luxury.png',
             'seats' => '7',
             'fuel' => 'Gasoline'
@@ -76,7 +76,7 @@ class CarSeeder extends Seeder
             'model' => 'HEV',
             'year' => '2024',
             'price' => '998000000',
-            'description' => 'Innova Cross là một phiên bản đặc biệt của mẫu xe MPV (Multi-Purpose Vehicle) Innova của Toyota, với thiết kế mang tính chất mạnh mẽ và thể thao. Xe được trang bị các chi tiết ngoại thất độc đáo như lưới tản nhiệt mạ crom đen, cản trước và sau thể thao, và các chi tiết mạnh mẽ khác. Nội thất của Innova Cross được cải tiến với các vật liệu cao cấp và các tính năng tiện nghi như hệ thống giải trí và hệ thống điều hòa tự động. Innova Cross vẫn giữ nguyên khả năng chở hàng và chỗ ngồi linh hoạt của Innova, đồng thời mang đến một diện mạo thể thao và cá tính hơn. Với sự kết hợp giữa tính linh hoạt của một MPV và phong cách mạnh mẽ của một xe thể thao đa dụng, Innova Cross là một sự lựa chọn hấp dẫn cho những người yêu thích sự đa năng và nổi bật trên đường.',
+            'description' => ' Toyota Innova Cross - Một phiên bản độc đáo của mẫu MPV Innova của Toyota. Innova Cross được thiết kế với phong cách mạnh mẽ và thể thao hơn, kèm theo tính linh hoạt và tiện ích của dòng xe MPV. Với nội thất rộng rãi, sức mạnh động cơ, và tính năng an toàn hiện đại, Innova Cross là sự lựa chọn lý tưởng cho những gia đình hoạt động năng động và muốn sở hữu một chiếc xe đa dụng đầy phong cách.            ',
             'image' => '../images/innova_cross.png',
             'seats' => '8',
             'fuel' => 'Gasoline'
@@ -87,7 +87,7 @@ class CarSeeder extends Seeder
             'model' => '2.0E',
             'year' => '2024',
             'price' => '755000000',
-            'description' => 'Innova là một mẫu xe MPV (Multi-Purpose Vehicle) của Toyota, được thiết kế để đáp ứng nhu cầu vận chuyển hành khách và đa dụng. Xe có thiết kế rộng rãi với khả năng chở được nhiều người và hàng hóa. Innova được đánh giá cao về độ bền, độ tin cậy và khả năng vận hành trong suốt thời gian hoạt động. Nội thất của Innova được thiết kế để mang lại sự thoải mái và tiện nghi cho hành khách, với các tính năng như hệ thống giải trí, hệ thống điều hòa không khí và không gian rộng rãi. Innova cũng được trang bị các tính năng an toàn như hệ thống phanh ABS, túi khí và hỗ trợ khởi hành ngang dốc. Với sự kết hợp giữa tính linh hoạt và tiện ích, Innova là một lựa chọn phổ biến cho gia đình và doanh nghiệp cần một chiếc xe đa dụng và đáng tin cậy.',
+            'description' => 'Toyota Innova - Mẫu xe MPV 7 chỗ đáng tin cậy và phổ biến của Toyota. Innova nổi bật với thiết kế linh hoạt, nội thất rộng rãi, và khả năng vận hành ổn định. Sức mạnh động cơ, tiện nghi nội thất, và tính an toàn cao làm cho Innova trở thành lựa chọn phổ biến cho gia đình và doanh nghiệp.            ',
             'image' => '../images/innova.png',
             'seats' => '8',
             'fuel' => 'Gasoline'
@@ -98,7 +98,7 @@ class CarSeeder extends Seeder
             'model' => 'Prado',
             'year' => '2024',
             'price' => '2628000000',
-            'description' => 'Land Cruiser Prado là một dòng xe SUV hạng trung của Toyota, nổi tiếng với khả năng vận hành off-road và tiện nghi cao. Xe được thiết kế mạnh mẽ và bền bỉ, với khung gầm chắc chắn và hệ thống treo linh hoạt. Land Cruiser Prado được trang bị động cơ mạnh mẽ, hệ dẫn động 4 bánh và hệ thống điều khiển địa hình, giúp vượt qua mọi địa hình khó khăn một cách dễ dàng. Nội thất của Prado được thiết kế sang trọng và tiện nghi, với các tính năng như hệ thống giải trí, hệ thống điều hòa không khí và khoang chứa rộng rãi. Prado cũng được trang bị các tính năng an toàn như hệ thống phanh ABS, túi khí đa điểm và hỗ trợ khởi hành ngang dốc. Với sự kết hợp giữa khả năng off-road mạnh mẽ và sự tiện nghi của một xe SUV, Land Cruiser Prado là lựa chọn ưu việt cho những người yêu thích cuộc sống phiêu lưu và đa dụng.',
+            'description' => 'Toyota Land Cruiser Prado - Một mẫu SUV hạng sang và đa dụng của Toyota. Prado nổi bật với khả năng vận hành off-road mạnh mẽ, động cơ mạnh mẽ và nội thất sang trọng. Thiết kế bền bỉ, tính linh hoạt và tính năng an toàn cao làm cho Prado trở thành sự lựa chọn ưa thích cho những người muốn sự đa dụng và sang trọng trong một chiếc SUV.            ',
             'image' => '../images/land_cruiser_prado.png',
             'seats' => '7',
             'fuel' => 'Gasoline'
@@ -109,7 +109,7 @@ class CarSeeder extends Seeder
             'model' => 'LC300',
             'year' => '2024',
             'price' => '4286000000',
-            'description' => 'Land Cruiser là một dòng xe SUV hạng sang của Toyota, với lịch sử lâu đời và danh tiếng vững chắc. Xe được biết đến với khả năng vận hành mạnh mẽ và độ bền cao, phù hợp cho cả điều kiện địa hình khắc nghiệt và sử dụng hàng ngày. Land Cruiser có thiết kế sang trọng và mạnh mẽ, với nội thất rộng rãi và tiện nghi cao cấp. Xe cung cấp các tính năng và công nghệ hiện đại như hệ thống giải trí, hệ thống điều hòa không khí đa vùng và hệ thống an toàn tiên tiến. Land Cruiser cũng nổi tiếng với khả năng vượt qua các điều kiện địa hình khó khăn nhờ hệ dẫn động 4 bánh và hệ thống điều khiển địa hình thông minh. Với sự kết hợp giữa sự sang trọng, sức mạnh và khả năng vận hành off-road, Land Cruiser là một biểu tượng trong thế giới xe hơi.',
+            'description' => 'Toyota Land Cruiser - Một biểu tượng trong phân khúc SUV hạng sang, nổi tiếng với sức mạnh, độ bền và khả năng vận hành off-road. Land Cruiser kết hợp giữa hiệu suất mạnh mẽ, nội thất tiện nghi và tính an toàn cao, tạo ra một trải nghiệm lái xe đỉnh cao cho cả trong thành phố và trên mọi địa hình.            ',
             'image' => '../images/land_cruiser.png',
             'seats' => '7',
             'fuel' => 'Gasoline'
@@ -120,7 +120,7 @@ class CarSeeder extends Seeder
             'model' => '1.2 AT',
             'year' => '2024',
             'price' => '455000000',
-            'description' => 'Với kích ngoại hình và giá bán hợp lý. Grand I10 Sedan là lựa chọn tốt cho khu vực đô thị với khả năng di chuyển linh hoạt, khả năng tiêu hao nhiên liệu thấp và đặc biệt là có thể mang vác khá nhiều hành lý khi di chuyển.',
+            'description' => 'Hyundai Grand i10 - Một mẫu xe hatchback nhỏ gọn và tiện ích của Hyundai. Grand i10 nổi bật với thiết kế thân thiện và tiết kiệm nhiên liệu, cùng với nội thất rộng rãi và tính linh hoạt. Sức mạnh động cơ, tính năng an toàn và giá cả phải chăng làm cho Grand i10 trở thành lựa chọn phổ biến cho người dùng đô thị.            ',
             'image' => '../images/hyundai-i10-sedan.png',
             'seats' => '5',
             'fuel' => 'Gasoline'
@@ -131,7 +131,7 @@ class CarSeeder extends Seeder
             'model' => '1.4 MT',
             'year' => '2024',
             'price' => '472000000',
-            'description' => 'New Hyundai Accent được thiết kế tạo sự cân bằng hoàn hảo giữa thể thao và thanh lịch, cùng khả năng vận hành mạnh mẽ và dáng vẻ vô cùng cuốn hút.',
+            'description' => 'Hyundai Accent - Một mẫu sedan nhỏ gọn và tiết kiệm nhiên liệu của Hyundai. Accent nổi bật với thiết kế hiện đại, sức mạnh động cơ, và tính tiện ích cao. Nội thất thoải mái và tính an toàn cao làm cho Accent trở thành lựa chọn phổ biến trong phân khúc sedan nhỏ.            ',
             'image' => '../images/accent.png',
             'seats' => '5',
             'fuel' => 'Gasoline'
@@ -142,7 +142,7 @@ class CarSeeder extends Seeder
             'model' => '2.0 Oil',
             'year' => '2024',
             'price' => '959000000',
-            'description' => '.',
+            'description' => 'Hyundai Tucson - Một mẫu SUV đa dụng và phổ biến của Hyundai. Tucson nổi bật với thiết kế hiện đại, khả năng vận hành ổn định và tiện nghi nội thất. Sức mạnh động cơ, tính linh hoạt và tính an toàn cao làm cho Tucson trở thành lựa chọn phổ biến trong phân khúc SUV.            ',
             'image' => '../images/tucson.png',
             'seats' => '7',
             'fuel' => 'Oil'
@@ -153,7 +153,7 @@ class CarSeeder extends Seeder
             'model' => '2.2 Oil',
             'year' => '2024',
             'price' => '1269000000',
-            'description' => '.',
+            'description' => 'Hyundai Santa Fe - Một mẫu SUV hạng sang và đa dụng của Hyundai. Santa Fe nổi bật với thiết kế đẳng cấp, nội thất rộng rãi và tiện nghi, cùng với khả năng vận hành ổn định và an toàn cao. Sức mạnh động cơ, tính linh hoạt và tính tiện ích làm cho Santa Fe trở thành lựa chọn hàng đầu cho những gia đình hoạt động năng động và muốn sở hữu một chiếc SUV sang trọng và đa dụng.            ',
             'image' => '../images/santafe.png',
             'seats' => '7',
             'fuel' => 'Oil'
@@ -164,7 +164,7 @@ class CarSeeder extends Seeder
             'model' => '2.0 AT',
             'year' => '2024',
             'price' => '729000000',
-            'description' => '.',
+            'description' => 'Hyundai Elantra - Một mẫu sedan phổ biến và đa dụng của Hyundai. Elantra nổi bật với thiết kế hiện đại, sức mạnh động cơ, và tính năng tiện ích. Nội thất thoải mái và tính an toàn cao làm cho Elantra trở thành lựa chọn ưa thích trong phân khúc sedan.            ',
             'image' => '../images/elantra.png',
             'seats' => '7',
             'fuel' => 'Gasoline'
@@ -175,7 +175,7 @@ class CarSeeder extends Seeder
             'model' => 'Palisade Prestige 7 seats',
             'year' => '2024',
             'price' => '1559000000',
-            'description' => '.',
+            'description' => 'Hyundai Palisade - Một mẫu SUV hạng sang và đa dụng của Hyundai. Palisade nổi bật với thiết kế sang trọng, nội thất rộng rãi và tiện nghi, cùng với khả năng vận hành ổn định và an toàn cao. Sức mạnh động cơ, tính linh hoạt và tính tiện ích làm cho Palisade trở thành lựa chọn hàng đầu trong phân khúc SUV hạng sang.            ',
             'image' => '../images/palisade.jpg',
             'seats' => '7',
             'fuel' => 'Gasoline'
@@ -186,7 +186,7 @@ class CarSeeder extends Seeder
             'model' => 'Custin 2.0T-GDi',
             'year' => '2024',
             'price' => '999000000',
-            'description' => '.',
+            'description' => 'Hyundai Custin - Mẫu MPV cỡ trung đầu tiên của Hyundai. Custin trang bị các hệ thống an toàn và 4 chế độ lái cùng với nội, ngoại thất đi theo hướng hiện đại, 2 thiết kế ghế độc lập, kiểu thương gia. Động cơ mạnh mẽ cùng độ tiện ích cao làm cho Custin trở thành lựa chọn hàng đầu trong phân khúc MPV tiện nghi',
             'image' => '../images/custin.jpg',
             'seats' => '7',
             'fuel' => 'Gasoline'
@@ -197,7 +197,7 @@ class CarSeeder extends Seeder
             'model' => '1.5 AT',
             'year' => '2024',
             'price' => '685000000',
-            'description' => '.',
+            'description' => 'Hyundai Stargazer - Mẫu xe MPV hơi hướng SUV đáng tin cậy và đầy tính năng tiện ích. Stargazer nổi bật với thiết kế linh hoạt, nội thất rộng rãi, và khả năng vận hành ổn định. Sức mạnh động cơ, tiện nghi nội thất, và tính an toàn cao làm cho Stargazer trở thành lựa chọn phổ biến cho gia đình và doanh nghiệp.            ',
             'image' => '../images/stargazer.png',
             'seats' => '7',
             'fuel' => 'Gasoline'
@@ -208,7 +208,7 @@ class CarSeeder extends Seeder
             'model' => 'AT PREMINUM',
             'year' => '2024',
             'price' => '658000000',
-            'description' => '.',
+            'description' => 'Mitsubishi Xpander - Một mẫu xe MPV đa dụng và phổ biến của Mitsubishi. Xpander nổi bật với thiết kế hiện đại, nội thất rộng rãi và tiện nghi, cùng với sức mạnh động cơ và tính an toàn cao. Với khả năng chở hàng linh hoạt và tiện ích, Xpander là lựa chọn ưa thích cho gia đình và doanh nghiệp.            ',
             'image' => '../images/xpander.jpg',
             'seats' => '7',
             'fuel' => 'Gasoline'
@@ -219,7 +219,7 @@ class CarSeeder extends Seeder
             'model' => 'DIESEL 4X4 AT',
             'year' => '2024',
             'price' => '1365000000',
-            'description' => '.',
+            'description' => 'Mitsubishi Pajero Sport - Một mẫu SUV hạng sang và đa dụng của Mitsubishi. Pajero Sport nổi bật với thiết kế mạnh mẽ, khả năng vận hành off-road, và tiện nghi nội thất. Sức mạnh động cơ, tính linh hoạt và tính an toàn cao làm cho Pajero Sport trở thành lựa chọn hàng đầu trong phân khúc SUV.            ',
             'image' => '../images/pajerosport.jpg',
             'seats' => '7',
             'fuel' => 'Oil'
@@ -230,7 +230,7 @@ class CarSeeder extends Seeder
             'model' => '2.0 CVT',
             'year' => '2024',
             'price' => '825000000',
-            'description' => '.',
+            'description' => 'Mitsubishi Outlander - Một mẫu SUV đa dụng và phổ biến của Mitsubishi. Outlander nổi bật với thiết kế hiện đại, nội thất rộng rãi và tiện nghi, cùng với sức mạnh động cơ và tính an toàn cao. Với khả năng vận hành linh hoạt và tính tiện ích, Outlander là lựa chọn phổ biến cho gia đình và những chuyến đi xa.            ',
             'image' => '../images/outlander.jpg',
             'seats' => '7',
             'fuel' => 'Gasoline'
@@ -241,7 +241,7 @@ class CarSeeder extends Seeder
             'model' => '4x4 AT ATHLETE',
             'year' => '2024',
             'price' => '905000000',
-            'description' => '.',
+            'description' => 'Mitsubishi Triton - Một mẫu xe bán tải đa dụng và mạnh mẽ của Mitsubishi. Triton nổi bật với thiết kế đẳng cấp, khả năng chịu tải cao và khả năng vận hành off-road xuất sắc. Nội thất tiện nghi và tính an toàn cao làm cho Triton trở thành lựa chọn ưa thích trong phân khúc xe bán tải.            ',
             'image' => '../images/triton.jpg',
             'seats' => '5',
             'fuel' => 'Oil'
@@ -252,7 +252,7 @@ class CarSeeder extends Seeder
             'model' => 'MT',
             'year' => '2024',
             'price' => '380000000',
-            'description' => '.',
+            'description' => 'Mitsubishi Attrage - Một mẫu sedan nhỏ gọn và tiết kiệm nhiên liệu của Mitsubishi. Attrage nổi bật với thiết kế linh hoạt, sức mạnh động cơ, và tiện nghi nội thất. Nội thất thoải mái và tính an toàn cao làm cho Attrage trở thành lựa chọn phổ biến trong phân khúc sedan nhỏ.            ',
             'image' => '../images/attrage.jpeg',
             'seats' => '4',
             'fuel' => 'Gasoline'
@@ -263,7 +263,7 @@ class CarSeeder extends Seeder
             'model' => 'EXCEED',
             'year' => '2024',
             'price' => '640000000',
-            'description' => '.',
+            'description' => 'Xforce - Mẫu SUV đô thị cỡ B của Mitsubishi với 4 phiên bản, bản Ultimate là cao cấp nhất. Xe nổi bật với kích thước lớn, thiết kế cơ bắp và tính linh hoạt trên mọi địa hình. Động cơ MIVEC 1.5L, công suất 105 mã lực. Xe trang bị nhiều tính năng tiện ích và an toàn như hệ thống AYC, MMSS, và âm thanh cao cấp Yamaha. Nội thất sang trọng và tiện nghi, đáp ứng nhu cầu của người dùng hiện đại.            ',
             'image' => '../images/xforce.jpg',
             'seats' => '5',
             'fuel' => 'Gasoline'
@@ -274,7 +274,7 @@ class CarSeeder extends Seeder
             'model' => 'CVT',
             'year' => '2024',
             'price' => '539000000',
-            'description' => '.',
+            'description' => 'Almera là một mẫu sedan nhỏ gọn của Nissan, nổi tiếng với tính tiết kiệm nhiên liệu và giá cả phải chăng. Xe được thiết kế để đáp ứng nhu cầu hàng ngày của các gia đình và người dùng đô thị. Almera cung cấp nội thất rộng rãi, hiệu suất động cơ ổn định và tính an toàn cao. Đây là một lựa chọn phổ biến trong phân khúc sedan nhỏ.            ',
             'image' => '../images/almera.jpg',
             'seats' => '4',
             'fuel' => 'Gasoline'
@@ -285,7 +285,7 @@ class CarSeeder extends Seeder
             'model' => 'E-POWER',
             'year' => '2024',
             'price' => '789000000',
-            'description' => '.',
+            'description' => 'Nissan Kicks là một mẫu SUV nhỏ gọn và đô thị của Nissan, với thiết kế hiện đại và động cơ tiết kiệm nhiên liệu. Xe nổi bật với không gian nội thất rộng rãi và tính linh hoạt, cùng với các tính năng an toàn và giải trí tiện ích. Kicks là sự lựa chọn phổ biến cho những người dùng đô thị muốn sự tiện lợi và phong cách.            ',
             'image' => '../images/kicks.jpg',
             'seats' => '5',
             'fuel' => 'Gasoline'
@@ -297,7 +297,7 @@ class CarSeeder extends Seeder
             'model' => 'CVT',
             'year' => '2024',
             'price' => '699000000',
-            'description' => '.',
+            'description' => 'Nissan Navara là một mẫu xe bán tải đa dụng và mạnh mẽ, với khả năng chịu tải cao và khả năng vận hành off-road ấn tượng. Navara nổi bật với thiết kế cứng cáp, nội thất tiện nghi, và sức mạnh động cơ. Đây là sự lựa chọn phổ biến trong phân khúc bán tải cho cả công việc và sử dụng cá nhân.            ',
             'image' => '../images/navara.jpg',
             'seats' => '5',
             'fuel' => 'Oil'
@@ -308,7 +308,7 @@ class CarSeeder extends Seeder
             'model' => 'PREMINUM HATCHBACK',
             'year' => '2024',
             'price' => '349000000',
-            'description' => '.',
+            'description' => 'Kia Morning - Một mẫu hatchback nhỏ gọn và tiết kiệm nhiên liệu của Kia. Morning nổi bật với thiết kế linh hoạt, sức mạnh động cơ và tính tiện ích cao. Nội thất thoải mái và tính an toàn cao làm cho Morning trở thành lựa chọn phổ biến trong phân khúc hatchback nhỏ.            ',
             'image' => '../images/morning.jpg',
             'seats' => '4',
             'fuel' => 'Gasoline'
@@ -319,7 +319,7 @@ class CarSeeder extends Seeder
             'model' => 'AT DELUXE',
             'year' => '2024',
             'price' => '386000000',
-            'description' => '.',
+            'description' => 'Kia Soluto - Một mẫu sedan nhỏ gọn và tiết kiệm nhiên liệu của Kia. Soluto nổi bật với thiết kế hiện đại, tính tiện nghi và sức mạnh động cơ. Nội thất rộng rãi và tính an toàn cao làm cho Soluto trở thành lựa chọn phổ biến trong phân khúc sedan nhỏ.            ',
             'image' => '../images/soluto.jpg',
             'seats' => '4',
             'fuel' => 'Gasoline'
@@ -330,33 +330,23 @@ class CarSeeder extends Seeder
             'model' => 'TURBO GT',
             'year' => '2024',
             'price' => '549000000',
-            'description' => '.',
+            'description' => 'Kia K3 - Một mẫu sedan hạng trung phổ biến của Kia. K3 nổi bật với thiết kế hiện đại, nội thất sang trọng và tiện nghi, cùng với hiệu suất động cơ mạnh mẽ. Tính an toàn cao và các tính năng công nghệ làm cho K3 trở thành lựa chọn ưa thích trong phân khúc sedan hạng trung.            ',
             'image' => '../images/k3.jpg',
             'seats' => '5',
             'fuel' => 'Gasoline'
         ]);
         DB::table('cars')->insert([
-            'name' => 'K3',
+            'name' => 'K5',
             'brand' => 'KIA',
             'model' => '2.5 GT-LINE',
             'year' => '2024',
             'price' => '859000000',
-            'description' => '.',
+            'description' => 'Kia K5 - Một mẫu sedan hạng trung cao cấp của Kia. K5 nổi bật với thiết kế đẳng cấp, nội thất sang trọng và tiện nghi, cùng với hiệu suất động cơ mạnh mẽ. Tính an toàn cao và các tính năng công nghệ tiên tiến làm cho K5 trở thành lựa chọn hàng đầu trong phân khúc sedan hạng trung.            ',
             'image' => '../images/k5.jpg',
             'seats' => '5',
             'fuel' => 'Gasoline'
         ]);     
-        DB::table('cars')->insert([
-            'name' => 'K3',
-            'brand' => 'KIA',
-            'model' => '2.5 GT-LINE',
-            'year' => '2024',
-            'price' => '859000000',
-            'description' => '.',
-            'image' => '../images/k5.jpg',
-            'seats' => '5',
-            'fuel' => 'Gasoline'
-        ]);
+
         DB::table('cars')->insert([
             'name' => 'SONET',
             'brand' => 'KIA',
@@ -374,7 +364,7 @@ class CarSeeder extends Seeder
             'model' => '1.4 LUXURY',
             'year' => '2024',
             'price' => '599000000',
-            'description' => '.',
+            'description' => 'Kia Sonet - Một mẫu SUV nhỏ gọn và đa dụng của Kia. Sonet nổi bật với thiết kế hiện đại, tính linh hoạt và tính tiện ích cao. Sức mạnh động cơ và tính an toàn làm cho Sonet trở thành lựa chọn phổ biến cho những người muốn sở hữu một chiếc SUV tiện dụng trong đô thị.            ',
             'image' => '../images/seltos.jpg',
             'seats' => '5',
             'fuel' => 'Gasoline'
@@ -385,7 +375,7 @@ class CarSeeder extends Seeder
             'model' => '2.0 LUXURY',
             'year' => '2024',
             'price' => '799000000',
-            'description' => '.',
+            'description' => 'Kia Sportage - Một mẫu SUV phổ biến và đa dụng của Kia. Sportage nổi bật với thiết kế hiện đại, nội thất rộng rãi và tiện nghi, cùng với hiệu suất động cơ mạnh mẽ. Tính an toàn cao và các tính năng công nghệ tiên tiến làm cho Sportage trở thành lựa chọn ưa thích trong phân khúc SUV.            ',
             'image' => '../images/sportage.jpg',
             'seats' => '5',
             'fuel' => 'Gasoline'
@@ -396,7 +386,7 @@ class CarSeeder extends Seeder
             'model' => '2.2D LUXURY',
             'year' => '2024',
             'price' => '979000000',
-            'description' => '.',
+            'description' => 'Kia Sorento - Một mẫu SUV hạng sang và đa dụng của Kia. Sorento nổi bật với thiết kế đẳng cấp, nội thất sang trọng và tiện nghi, cùng với hiệu suất động cơ mạnh mẽ. Tính an toàn cao và các tính năng công nghệ tiên tiến làm cho Sorento trở thành lựa chọn hàng đầu trong phân khúc SUV.            ',
             'image' => '../images/sorento.jpg',
             'seats' => '7',
             'fuel' => 'Gasoline'
@@ -407,7 +397,7 @@ class CarSeeder extends Seeder
             'model' => '2.2D LUXURY',
             'year' => '2024',
             'price' => '1169000000',
-            'description' => '.',
+            'description' => 'Kia Carnival - Một mẫu MPV hạng sang và đa dụng của Kia. Carnival nổi bật với thiết kế rộng rãi và sang trọng, nội thất tiện nghi và tính linh hoạt. Sức mạnh động cơ và các tính năng an toàn làm cho Carnival trở thành lựa chọn ưa thích cho gia đình và các chuyến đi dài.            ',
             'image' => '../images/carnival.jpg',
             'seats' => '7',
             'fuel' => 'Gasoline'
@@ -418,7 +408,7 @@ class CarSeeder extends Seeder
             'model' => '1.5 MT DELUXE',
             'year' => '2024',
             'price' => '589000000',
-            'description' => '.',
+            'description' => 'Kia Carens - Một mẫu MPV đa dụng và tiện nghi của Kia. Carens nổi bật với thiết kế linh hoạt, nội thất rộng rãi và tiện ích, cùng với sức mạnh động cơ và tính an toàn cao. Đây là sự lựa chọn phổ biến cho gia đình và các chuyến đi dài.            ',
             'image' => '../images/carens.jpg',
             'seats' => '5',
             'fuel' => 'Gasoline'
