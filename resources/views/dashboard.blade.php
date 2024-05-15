@@ -79,6 +79,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('cart.view') }}">Cart <span class="badge badge-pill badge-danger">{{ count(session('cart', [])) }}</span></a>
+                </li>
             </ul>
         </div>
     </div>

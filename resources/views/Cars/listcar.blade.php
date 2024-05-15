@@ -56,7 +56,7 @@
 
                     /* Đảm bảo rằng tất cả hình ảnh đều có kích thước cố định và không bị bóp méo */
                     .card-img-top {
-                        width: 100%;
+                        width: 100px;
                         height: auto;
                     }
                 </style>
