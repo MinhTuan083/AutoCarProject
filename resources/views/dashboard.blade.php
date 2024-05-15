@@ -79,11 +79,30 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
+                @guest
+                <li class="nav-item">
+                   <a class="nav-link" href="{{ route('login') }}">ListUser</a>
+                </li>
+                @else
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown ten" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Users
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{{ route('addbrand') }}">List Department</a></li>
+                        <li><a class="dropdown-item" href="{{ route('user.list') }}">List User</a></li>
+                        <li><a class="dropdown-item" href="{{ route('signout') }}">Sign out</a></li>
+                    </ul>
+                </li>
+                @endguest
+                
             </ul>
         </div>
     </div>
 </nav>
-
+<script>
+    document.getElementById("ten").innerHTML = localStorage.getItem("name");
+</script>
 @yield('content')
 
 
