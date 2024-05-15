@@ -6,7 +6,7 @@ use App\Http\Controllers\CarController;
 use App\Models\Brand;
 use App\Http\Controllers\BrandController;
 
-
+use App\Http\Controllers\CartController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,6 +34,15 @@ Route::get('edit-brand/{id}', [BrandController::class, 'editBrand'])->name('bran
 Route::post('update-brand/{id}', [BrandController::class, 'updateBrand'])->name('brands.update');
 Route::delete('delete-brand/{id}', [BrandController::class, 'deleteBrand'])->name('brands.delete');
 
+
+
+//Cart
+Route::post('/cart/add/{id}', [CartController::class, 'add'])->name('cart.add');
+Route::get('/cart', [CartController::class, 'view'])->name('cart.view');
+Route::get('/viewThanhToan', [CartController::class, 'viewThanhToan'])->name('viewThanhToan');
+
+//Hóa đơn
+Route::post('/viewHoaDon', [CartController::class, 'viewHoaDon'])->name('viewHoaDon');
 
 Route::get('/', function () {
     return view('welcome');
