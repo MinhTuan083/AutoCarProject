@@ -58,13 +58,13 @@ class CarController extends Controller
         $car->fuel = $request->fuel; // Lưu nhiên liệu
         $car->save();
 
-        return redirect()->route('addcar')->with('success', 'Car added successfully');
+        return redirect()->route('listcar')->with('success', 'Car added successfully');
     }
 
     public function listCar()
     {
         // Lấy danh sách các xe từ cơ sở dữ liệu
-        $cars = Car::all();
+        $cars = Car::paginate(6);
         // Trả về view 'cars.listcar' kèm theo dữ liệu về danh sách các xe
         return view('cars.listcar', ['cars' => $cars]);
     }
@@ -85,7 +85,7 @@ class CarController extends Controller
         $car->delete();
     
         // Chuyển hướng về trang danh sách xe với thông báo thành công
-        return redirect("listbrand")->with('message', 'Car deleted successfully');
+        return redirect("listcar")->with('message', 'Car deleted successfully');
     }
     
     public function showCar($id)

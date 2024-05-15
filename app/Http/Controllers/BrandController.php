@@ -46,7 +46,7 @@ class BrandController extends Controller
         $brand->logo = $logoName ?? null; // Lưu tên logo vào cơ sở dữ liệu
         $brand->save();
 
-        return redirect()->route('addbrand')->with('success', 'Brand added successfully');
+        return redirect()->route('listbrand')->with('success', 'Brand added successfully');
     }
     public function updateBrand(Request $request, $id)
     {

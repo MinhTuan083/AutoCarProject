@@ -32,7 +32,10 @@
                         <p>Car not found</p>
                         @endif
                     </div>
-                </div>
+                    <div class="card-footer text-center py-3">
+                        <a href="{{ route('listcar') }}" class="btn btn-lg btn-dark">Back to Cars</a>
+                    </div>
+                    </div>
             </div>
         </div>
     </div>
