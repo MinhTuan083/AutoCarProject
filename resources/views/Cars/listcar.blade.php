@@ -89,6 +89,9 @@
                             </div>
                             @endforeach
                         </div>
+                        <div class="pagination justify-content-center mt-5">
+                        {{ $cars->links()}} </div>
+                        </div>
                     </div>
                 </div>
             </div>
