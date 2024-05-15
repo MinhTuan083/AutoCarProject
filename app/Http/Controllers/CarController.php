@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use App\Models\Brand;
 
+use App\Models\User;
+
+use Illuminate\Support\Facades\Auth;
 class CarController extends Controller
 {
     /**
@@ -14,6 +17,7 @@ class CarController extends Controller
      */
     public function index()
     {
+       
         return view('dashboard');
     }
 
