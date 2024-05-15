@@ -7,6 +7,8 @@ use App\Models\Brand;
 use App\Http\Controllers\BrandController;
 use App\Models\User;
 use App\Http\Controllers\UserController;
+use App\Models\ChiNhanh;
+use App\Http\Controllers\ChiNhanhController;
 
 
 /*
@@ -40,7 +42,7 @@ Route::delete('delete-brand/{id}', [BrandController::class, 'deleteBrand'])->nam
 
 Route::get('login', [UserController::class, 'index'])->name('login');
 Route::post('custom-login', [UserController::class, 'customLogin'])->name('login.custom');
-Route::get('registration', [UserController::class, 'registration'])->name('register-user');
+Route::get('registrationUser', [UserController::class, 'registrationUser'])->name('register-user');
 Route::post('custom-registration', [UserController::class, 'customRegistration'])->name('register.custom');
 Route::get('signout', [UserController::class, 'signOut'])->name('signout');
 Route::post('registration', [UserController::class, 'customRegistration'])->name('register.customs');
@@ -53,6 +55,16 @@ Route::get('delete', [UserController::class, 'deleteUser'])->name('crud_user.del
 
 
 Route::get('view', [UserController::class, 'readUser'])->name('view.user');
+
+Route::get('listCN', [ChiNhanhController::class, 'listChiNhanh'])->name('CN.list');
+Route::get('registration', [ChiNhanhController::class, 'registration'])->name('register-CN');
+Route::post('CN-registration', [ChiNhanhController::class, 'ChiNhanhRegistration'])->name('register.CN');
+Route::get('edit-CN/{id}', [ChiNhanhController::class, 'editChiNhanh'])->name('edit.CN');
+Route::get('update-CN/{id}', [ChiNhanhController::class, 'updateChiNhanh'])->name('update.CN');
+Route::get('deleteCN', [ChiNhanhController::class, 'deleteChiNhanh'])->name('crud_CN.deleteCN');
+
+
+Route::get('view', [ChiNhanhController::class, 'readChiNhanh'])->name('view.ChiNhanh');
 
 Route::get('/', function () {
     return view('welcome');

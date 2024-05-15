@@ -79,6 +79,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Chi Nhánh
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{{ route('register-CN') }}">Thêm chi nhánh</a></li>
+                        <li><a class="dropdown-item" href="{{ route('CN.list') }}">Danh sách chi nhánh</a></li>
+                    </ul>
+                </li>
                 @guest
                 <li class="nav-item">
                    <a class="nav-link" href="{{ route('login') }}">ListUser</a>
@@ -89,7 +98,6 @@
                     Users
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="{{ route('addbrand') }}">List Department</a></li>
                         <li><a class="dropdown-item" href="{{ route('user.list') }}">List User</a></li>
                         <li><a class="dropdown-item" href="{{ route('signout') }}">Sign out</a></li>
                     </ul>

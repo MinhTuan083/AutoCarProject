@@ -33,7 +33,7 @@ class UserController extends Controller
         return redirect()->back()->withErrors(['email' => 'Incorrect email or password.'])->withInput();
     }
 
-    public function registration()
+    public function registrationUser()
     {
         return view('crud_user.registration');
     }
