@@ -75,7 +75,7 @@ public function create(array $data)
         'phone' => $data['phone'], // Lưu trữ số điện thoại
         // Lưu trữ đường dẫn ảnh với 'image_path' là tên cột trong database
         'image' => $data['image'] ?? null, 
-        
+        'chucvu'=> "khachhang"
     ]); 
     
 } 
@@ -124,7 +124,7 @@ public function create(array $data)
     public function listUser()
     {
         if (Auth::check()) {
-            $users = User::paginate(10);
+            $users = User::paginate(1);
             return view('crud_user.list', ['users' => $users]);
         }
 

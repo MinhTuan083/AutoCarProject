@@ -41,7 +41,7 @@
                 
                         </table>
                        <div > 
-                       </div>
+                       {{ $users->render('vendor.pagination.custom') }}</div>
                         </div>
                     </div>
             <!-- Phan trang -->

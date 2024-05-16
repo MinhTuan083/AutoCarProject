@@ -54,7 +54,7 @@ Route::get('update-user/{id}', [UserController::class, 'updateUser'])->name('upd
 Route::get('delete', [UserController::class, 'deleteUser'])->name('crud_user.deleteUser');
 
 
-Route::get('view', [UserController::class, 'readUser'])->name('view.user');
+Route::get('viewUSer', [UserController::class, 'readUser'])->name('view.user');
 
 Route::get('listCN', [ChiNhanhController::class, 'listChiNhanh'])->name('CN.list');
 Route::get('registration', [ChiNhanhController::class, 'registration'])->name('register-CN');

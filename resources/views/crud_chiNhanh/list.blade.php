@@ -43,7 +43,7 @@
                 
                         </table>
                        <div > 
-                       </div>
+                       {{ $ChiNhanh->render('vendor.pagination.custom') }}</div>
                         </div>
                     </div>
             <!-- Phan trang -->
