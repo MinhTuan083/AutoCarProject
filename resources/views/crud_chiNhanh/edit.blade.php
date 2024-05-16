@@ -26,9 +26,9 @@
     </div>
     <!-- Trường mo ta -->
     <div class="form-group mb-3">
-        <input type="text" placeholder="Mô tả" id="mota" class="form-control" name="mota" value="{{ $user->mota }}" required>
-        @if ($errors->has('mota'))
-            <span class="text-danger">{{ $errors->first('mota') }}</span>
+        <input type="text" placeholder="Mô tả" id="mota" class="form-control" name="des" value="{{ $user->des }}" required>
+        @if ($errors->has('des'))
+            <span class="text-danger">{{ $errors->first('des') }}</span>
         @endif
     </div>
     <!-- Trường điện thoại -->
@@ -42,7 +42,7 @@
     <!-- Trường ảnh -->
     <div class="form-group mb-3">
         <label for="image">Choose profile image</label>
-        <input type="file" id="image" class="form-control" name="image" accept="image/*" value="{{ $user->image }}">
+        <input type="file" id="image" class="form-control" name="image" accept="image/*" >
         @if ($errors->has('image'))
             <span class="text-danger">{{ $errors->first('image') }}</span>
         @endif
