@@ -10,8 +10,8 @@ Route::get('/', function () {
 Route::get('dashboard', [CRUDCarController::class, 'index'])->name('dashboard');
 Route::get('car-types', [CRUDCarController::class, 'listCartp'])->name('view');
 Route::get('create', [CRUDCarController::class, 'create'])->name('car-types.create');
-Route::get('addcar', [CRUDCarController::class, 'create'])->name('addcar');
-Route::post('addcar', [CRUDCarController::class, 'store'])->name('cars.store');
+Route::get('addcartype', [CRUDCarController::class, 'create'])->name('addcartype');
+Route::post('addcartype', [CRUDCarController::class, 'store'])->name('carsstore');
 Route::get('edit/{id}', [CRUDCarController::class, 'edit'])->name('edit');
 Route::put('update/{carType}', [CRUDCarController::class, 'update'])->name('update');
 Route::delete('deletecar/{id}', [CRUDCarController::class, 'deleteCar'])->name('deleteCar');
