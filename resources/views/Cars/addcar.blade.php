@@ -89,7 +89,7 @@
                                 @enderror
                             </div>
                             <div class="mb-3 mt-5 text-center">
-                                <button type="submit" class="btn btn-dark btn-lg btn-update">Add Brand</button>
+                                <button type="submit" class="btn btn-dark btn-lg btn-update">Add Car</button>
                             </div>
                         </form>
                     </div>
