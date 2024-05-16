@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row justify-content-center">
             <div class="card" style="border: 1px solid black">
-                        <h3 class="card-header text-center">Read User</h3>
+                        <h3 class="card-header text-center">Chi tiết Chi Nhánh</h3>
                         <div class="card-body" >
                         <div class="row">
                             <div class="col-4" > <img src=" /./storage/{{ $users->image }} " width="300px" ></div>
