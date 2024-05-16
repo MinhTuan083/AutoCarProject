@@ -10,6 +10,9 @@ use App\Http\Controllers\BrandController;
 
 <<<<<<< HEAD
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\PDFController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,7 +41,6 @@ Route::post('update-brand/{id}', [BrandController::class, 'updateBrand'])->name(
 Route::delete('delete-brand/{id}', [BrandController::class, 'deleteBrand'])->name('brands.delete');
 
 
-
 //Cart
 Route::post('/cart/add/{id}', [CartController::class, 'add'])->name('cart.add');
 Route::get('/cart', [CartController::class, 'view'])->name('cart.view');
@@ -47,8 +49,8 @@ Route::get('/viewThanhToan', [CartController::class, 'viewThanhToan'])->name('vi
 //Hóa đơn
 Route::post('/viewHoaDon', [CartController::class, 'viewHoaDon'])->name('viewHoaDon');
 
-=======
->>>>>>> Car-Categories
+
+Route::post('/download_pdf', [PDFController::class, 'downloadPDF'])->name('download_pdf');
 Route::get('/', function () {
     return view('welcome');
 });

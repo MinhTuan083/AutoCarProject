@@ -48,5 +48,19 @@
         <p><strong>Tổng số lượng:</strong> {{ $totalQuantity }}</p>
         <p><strong>Tổng tiền:</strong> {{ number_format($totalPrice) }} VND</p>
     </div>
+    
+    <div class="text-center mt-4">
+        <form action="{{ route('download_pdf') }}" method="POST">
+            @csrf
+            <!-- Thêm các trường ẩn để chứa dữ liệu -->
+            <input type="hidden" name="name" value="{{ $name }}">
+            <input type="hidden" name="address" value="{{ $address }}">
+            <input type="hidden" name="email" value="{{ $email }}">
+            <input type="hidden" name="phone" value="{{ $phone }}">
+            <!-- Nút submit để tải xuống PDF -->
+            <button type="submit" class="btn btn-primary">Xuất hóa đơn</button>
+        </form>
+    </div>
+
 </div>
 @endsection
