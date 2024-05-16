@@ -29,7 +29,7 @@
                     <td>{{ $carType->country }}</td>
                     <td>
                         <a href="{{ route('edit', $carType->id) }}" class="btn btn-sm btn-primary">Sửa</a>
-                        <form action="{{ route('delete', $carType->id) }}" method="POST" style="display: inline;">
+                        <form action="{{ route('deleteCar', $carType->id) }}" method="POST" style="display: inline;">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa loại xe này không?')">Xóa</button>

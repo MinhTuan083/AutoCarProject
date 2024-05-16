@@ -14,7 +14,7 @@ Route::get('addcar', [CRUDCarController::class, 'create'])->name('addcar');
 Route::post('addcar', [CRUDCarController::class, 'store'])->name('cars.store');
 Route::get('edit/{id}', [CRUDCarController::class, 'edit'])->name('edit');
 Route::put('update/{carType}', [CRUDCarController::class, 'update'])->name('update');
-Route::delete('delete/{id}', [CRUDCarController::class, 'deleteCar'])->name('delete');
+Route::delete('deletecar/{id}', [CRUDCarController::class, 'deleteCar'])->name('deleteCar');
 
 
 Route::get('employee', [CRUDEmployeeController::class, 'listEmp'])->name('viewEmp');
