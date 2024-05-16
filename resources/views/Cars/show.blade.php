@@ -6,7 +6,7 @@
         <div class="row justify-content-center">
             <div class="col-md">
                 <div class="card">
-                    <h3 class="card-header text-center bg-dark text-light">Read Car</h3>
+                    <h3 class="card-header text-center bg-dark text-light mt-5">Read Car</h3>
                     <div class="card-body">
                         @if($car)
                         <div class="row">
@@ -14,13 +14,13 @@
                                 <img src="{{ asset('images/' . $car->image) }}" class="img-fluid rounded" style="width: 631px; height: 250px;" alt="{{ $car->name }}">
                             </div>
                             <div class="col-md-6 order-md-1">
-                                <p><strong>Name:</strong> <span style="font-size: 1em;">{{ $car->name }}</span></p>
-                                <p><strong>Brand:</strong> <span style="font-size: 1em;">{{ $car->brand }}</span></p>
-                                <p><strong>Model:</strong> <span style="font-size: 1em;">{{ $car->model }}</span></p>
-                                <p><strong>Year:</strong> <span style="font-size: 1em;">{{ $car->year }}</span></p>
-                                <p><strong>Price:</strong> <span style="font-size: 1em; color: red;">{{ number_format($car->price) }} VND</span></p>
-                                <p><strong>Seats:</strong> <span style="font-size: 1em;">{{ $car->seats }}</span></p>
-                                <p><strong>Fuel:</strong> <span style="font-size: 1em;">{{ $car->fuel }}</span></p>
+                                <p><strong>Name: <span style="font-size: 1em;">{{ $car->name }}</strong></span></p>
+                                <p><strong>Brand: <span style="font-size: 1em;">{{ $car->brand }}</strong></span></p>
+                                <p><strong>Model: <span style="font-size: 1em;">{{ $car->model }}</strong></span></p>
+                                <p><strong>Year: <span style="font-size: 1em;">{{ $car->year }}</strong></span></p>
+                                <p><strong>Price: <span style="font-size: 1em; color: red;">{{ number_format($car->price) }} VND</strong></span></p>
+                                <p><strong>Seats: <span style="font-size: 1em;">{{ $car->seats }}</strong></span></p>
+                                <p><strong>Fuel: <span style="font-size: 1em;">{{ $car->fuel }}</strong></span></p>
                                 <p><strong>Description:</strong> <span style="font-size: 1em;">{{ $car->description }}</span></p>
                                 <form method="POST" action="{{ route('cart.add', ['id' => $car->id]) }}">
                                     @csrf

@@ -6,7 +6,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card shadow">
-                    <h3 class="card-header text-center bg-dark text-light">Add New Car</h3>
+                    <h3 class="card-header text-center bg-dark text-light mt-4">Add New Car</h3>
                     <div class="card-body">
                         <form method="POST" action="{{ route('cars.store') }}" enctype="multipart/form-data">
                             @csrf
@@ -88,7 +88,7 @@
                                     <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
-                            <div class="mb-3 mt-4 text-center">
+                            <div class="mb-3 mt-5 text-center">
                                 <button type="submit" class="btn btn-dark btn-lg btn-update">Add Brand</button>
                             </div>
                         </form>
