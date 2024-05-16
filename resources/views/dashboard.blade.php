@@ -120,9 +120,6 @@
     </div>
 </nav>
 
-<<<<<<< HEAD
-@yield('content')
-=======
 @yield('content')
 
 
@@ -131,4 +128,4 @@
 </body>
 </html>
 
->>>>>>> origin/master
+
