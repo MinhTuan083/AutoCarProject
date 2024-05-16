@@ -59,6 +59,7 @@ class CartController extends Controller
 
     public function viewHoaDon(Request $request)
     {
+
         // Lấy thông tin khách hàng từ form
         $name = $request->input('name');
         $address = $request->input('address');
@@ -89,11 +90,22 @@ class CartController extends Controller
         $hoaDon->save();
 
         // Gửi email đến địa chỉ email của người dùng
-        Mail::to($email)->send(new MailInvoke($name, $address, $email,$phone ,$totalPrice, $totalQuantity, $cart));
+        Mail::to($email)->send(new MailInvoke($name, $address, $email, $phone, $totalPrice, $totalQuantity, $cart));
+
+        //Report
+        PDFController::generatePDF($hoaDon);
 
         // Lưu thông báo vào session
         session()->put('success', "Thanh toán thành công");
 
-        return view('cart.viewHoaDon', compact('cart','name','email','address','phone','totalPrice','totalQuantity'));
+        return view('cart.viewHoaDon', compact(
+            'cart',
+            'name',
+            'email',
+            'address',
+            'phone',
+            'totalPrice',
+            'totalQuantity'
+        ));
     }
 }
