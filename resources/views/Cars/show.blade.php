@@ -6,11 +6,11 @@
         <div class="row justify-content-center">
             <div class="col-md">
                 <div class="card">
-                    <h3 class="card-header text-center">Read Car</h3>
+                    <h3 class="card-header text-center bg-dark text-light">Read Car</h3>
                     <div class="card-body">
                         @if($car)
                         <div class="row">
-                            <div class="col-md-6 order-md-2 text-center mt-5">
+                            <div class="col-md-6 order-md-2 text-center mt-5 ">
                                 <img src="{{ asset('images/' . $car->image) }}" class="img-fluid rounded" style="width: 631px; height: 250px;" alt="{{ $car->name }}">
                             </div>
                             <div class="col-md-6 order-md-1">
