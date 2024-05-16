@@ -1,59 +1,44 @@
-@if (session('message'))
-    <script>
-        window.onload = function() {
-            alert('{{ Session::get('message') }}');
-        }
-    </script>
-@endif
-
 @extends('dashboard')
 
 @section('content')
-
-    <main class="login-form">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="card" style="border: 1px solid black">
-                    <h3 class="card-header text-center">List car</h3>
-                    <div class="card-body">
-                        <table style=" border-collapse: collapse;">
-
-                            <tr>
-                                <td>Name</td>
-                                <td>Description</td>
-                                <td>Image</td>
-                            </tr>
-                            <?php $i = 1 ;
-                            ?>
-                            @foreach($carTypes as $user)
-                                <tr>
-                                    <th>{{ $user->name }}</th>
-                                    <th>{{ $user->description }}</th>
-                                    <th><img src=" /./storage/{{ $user->image }} " width="100" ></th>
-
-                                </tr>
-                            @endforeach
-
-                        </table>
-
-                </div>
-                <!-- Phan trang -->
-
-            </div>
-        </div>
-        </div>
-    </main>
-    <style>
-        table{
-            border-collapse: collapse;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 20px;
-
-        }
-        td,th{
-            border: 1px solid black;
-            text-align: center;
-            width: 10%;}
-    </style>
+    <div class="container">
+        <h2>Danh sách loại xe</h2>
+        <a href="{{ route('addcar') }}" class="btn btn-primary">Thêm loại xe mới</a>
+        <table class="table mt-3">
+            <thead>
+            <tr>
+                <th>Tên</th>
+                <th>Mô tả</th>
+                <th>Hình ảnh</th>
+                <th>Country</th>
+                <th>Tuy chon</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach ($carTypes as $carType)
+                <tr>
+                    <td>{{ $carType->name }}</td>
+                    <td>{{ $carType->description }}</td>
+                    <td>
+                        @if($carType->image)
+                            <img src="/./car_types/{{ $carType->image }}" alt="Ảnh xe" style="max-width: 100px;">
+                        @else
+                            N/A
+                        @endif
+                    </td>
+                    <td>{{ $carType->country }}</td>
+                    <td>
+                        <a href="{{ route('edit', $carType->id) }}" class="btn btn-sm btn-primary">Sửa</a>
+                        <form action="{{ route('delete', $carType->id) }}" method="POST" style="display: inline;">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa loại xe này không?')">Xóa</button>
+                        </form>
+                    </td>
+                </tr>
+            @endforeach
+            
+            </tbody>
+        </table>
+    </div>
 @endsection
