@@ -7,8 +7,6 @@ use App\Models\Car;
 use App\Http\Controllers\CarController;
 use App\Models\Brand;
 use App\Http\Controllers\BrandController;
-
-<<<<<<< HEAD
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\PDFController;
 

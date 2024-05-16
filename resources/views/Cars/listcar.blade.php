@@ -56,7 +56,7 @@
 
                     /* Đảm bảo rằng tất cả hình ảnh đều có kích thước cố định và không bị bóp méo */
                     .card-img-top {
-                        width: 100px;
+                        width: 100%;
                         height: auto;
                     }
                 </style>
@@ -89,10 +89,11 @@
                             </div>
                             @endforeach
                         </div>
-                        <div class="pagination justify-content-center mt-5">
+                    </div>
+                    <div class="pagination justify-content-center mt-5">
                         {{ $cars->links()}} </div>
                         </div>
-                    </div>
+
                 </div>
             </div>
         </div>
