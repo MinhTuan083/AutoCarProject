@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <h2>Danh sách loại xe</h2>
-        <a href="{{ route('addcar') }}" class="btn btn-primary">Thêm loại xe mới</a>
+        <a href="{{ route('addcartype') }}" class="btn btn-primary">Thêm loại xe mới</a>
         <table class="table mt-3">
             <thead>
             <tr>
