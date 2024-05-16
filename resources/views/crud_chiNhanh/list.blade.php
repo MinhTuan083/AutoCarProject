@@ -16,24 +16,26 @@
                         <td>ID</td>
                         <td>Image</td>
                         <td>Name</td>
-                        <td>Email</td>
+                        <td>DiaChi</td>
                         <td>Phone</td>
+                        <td>Mô tả</td>
                         <td>Action</td>
                     </tr>
                     <?php $i = 1 ;
                      ?>
-                    @foreach($users as $user)
+                    @foreach($ChiNhanh as $user)
                         
                         <tr>
                             <th>{{ $i++ }}</th>
                             <th><img src=" /./storage/{{ $user->image }} " width="100px"></th>
                             <th>{{ $user->name }}</th>
-                            <th>{{ $user->email }}</th>
+                            <th>{{ $user->diachi }}</th>
                             <th>{{ $user->phone }}</th>
+                            <th>{{ $user->des }}</th>
                             <th>
-                               <button type="button"> <a href="{{ route('view.user', ['id' => $user->id]) }}">View</a> </button>
-                                <button type="button"><a href="{{ route('edit.user', ['id' => $user->id]) }}">Edit</a> </button>
-                                <button type="button"><a href="{{ route('crud_user.deleteUser', ['id' => $user->id]) }}" class="btn btn-danger btn-sm">Delete</a> </button>
+                               <button type="button"> <a href="{{ route('view.ChiNhanh', ['id' => $user->id]) }}">View</a> </button>
+                                <button type="button"><a href="{{ route('edit.CN', ['id' => $user->id]) }}">Edit</a> </button>
+                                <button type="button"><a href="{{ route('crud_CN.deleteCN', ['id' => $user->id]) }}" class="btn btn-danger btn-sm">Delete</a> </button>
 
                             </th>
                         </tr>
@@ -41,7 +43,7 @@
                 
                         </table>
                        <div > 
-                       {{ $users->render('vendor.pagination.custom') }}</div>
+                       {{ $ChiNhanh->render('vendor.pagination.custom') }}</div>
                         </div>
                     </div>
             <!-- Phan trang -->
