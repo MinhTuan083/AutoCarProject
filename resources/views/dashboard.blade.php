@@ -515,16 +515,17 @@
         </button>
     </div>
    <!--banner qc-->
+   <h1 style="text-align: center; margin-top: 200px; margin-bottom: 50px;">Promotion</h1>
     <div class="container">
         <div class="banner">
-        <h2>Giá Xe Sài Gòn và Khuyến Mãi</h2>
+        <h2>Saigon Car Prices and Promotions</h2>
             <img src="{{ asset('banner/banner.jpg') }}" alt="Banner 1" >
-            <p>Đừng bỏ lỡ cơ hội vàng để sở hữu ngay các dòng xe Kia Sài Gòn tuyệt vời trong tháng này! Chương trình đặc biệt với ưu đãi lớn, đăng ký nhanh chóng, nhận ngay tiền mặt, bảo hiểm hấp dẫn, phụ kiện chất lượng cao và những phần quà giá trị đang chờ đón bạn! Hãy nhanh tay, số lượng có hạn!<a href="#">Xem chi tiết</a></p>
+            <p>Don't miss the golden opportunity to own some great Kia Saigon cars this month! Special program with great deals, quick registration, instant cash receipt, attractive insurance, high-quality accessories and valuable gifts await you! Hurry, the quantity is limited! <a href="#">View details</a></p>
         </div>
         <div class="banner">
-        <h2>XE OTO TRẢ GÓP</h2> 
-            <img src="{{ asset('banner/banner1.jpg') }}" alt="Banner 2">
-            <p>Hãy trải nghiệm sự hoàn hảo và tiện lợi mỗi khi mua xe tại TP.Hồ Chí Minh với chương trình vay mua xe Kia đặc biệt trong tháng này! Lãi suất cạnh tranh, ưu đãi hấp dẫn, và những phần quà giá trị sẽ là lựa chọn hoàn hảo cho bạn. Đừng bỏ lỡ cơ hội này với nhiều ưu đãi độc quyền đang chờ đón.<a href="#">Xem chi tiết</a>        </p>
+        <h2>INSTALLMENT CARS</h2>
+                    <img src="{{ asset('banner/banner1.jpg') }}" alt="Banner 2">
+                    <p>Experience perfection and convenience every time you buy a car in Ho Chi Minh City. Ho Chi Minh City with a special Kia car loan program this month! Competitive interest rates, attractive incentives, and valuable gifts will be the perfect choice for you. Don't miss this opportunity with many exclusive offers awaiting. <a href="#">View details</a> </p>
             </div>
     </div>
     <!--  -->
