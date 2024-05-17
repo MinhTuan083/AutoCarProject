@@ -704,6 +704,10 @@
                     </div>
                 </div>
             </div>
+             
+    <button id="scrollToTopBtn" class="scrollToTopBtn">
+        <i class="bi bi-arrow-up-circle"></i>
+    </button>
             <div class="text-center mt-3">
                 <p>&copy; 2024 Car Dealership. All rights reserved.</p>
             </div>
@@ -761,11 +765,50 @@
         footer .text-center {
             margin-top: 30px;
         }
+        .scrollToTopBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        display: none; /* Ẩn nút ban đầu */
+        align-items: center;
+        justify-content: center;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .scrollToTopBtn i {
+        font-size: 30px;
+    }
+
+    .scrollToTopBtn:hover {
+        background-color: #0056b3;
+    }
     </style>
     @endif
 
     @yield('content')
+    <script>
+    // Hiển thị nút khi người dùng cuộn xuống 100px từ đầu trang
+    window.onscroll = function() {
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollToTopBtn.style.display = "flex"; 
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    };
 
+    // Cuộn lên đầu trang khi người dùng nhấn vào nút
+    document.getElementById("scrollToTopBtn").onclick = function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+</script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
 </body>
