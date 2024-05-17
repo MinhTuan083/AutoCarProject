@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Dealership</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <style>
         .navbar {
             background-color: #343a40; /* Background color */
@@ -466,6 +467,100 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div>
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <!-- About Section -->
+            <div class="col-md-4">
+                <h5>About Us</h5>
+                <p>We are a trusted car dealership offering a wide range of vehicles to meet your needs and preferences.</p>
+            </div>
+            <!-- Quick Links Section -->
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="{{ route('dashboard') }}" class="text-white">Home</a></li>
+                    <li><a href="#" class="text-white">About Us</a></li>
+                    <li><a href="#" class="text-white">Inventory</a></li>
+                    <li><a href="#" class="text-white">Services</a></li>
+                    <li><a href="#" class="text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Contact Information Section -->
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-geo-alt-fill"></i> 123 Main Street, Hanoi, Vietnam</li>
+                    <li><i class="bi bi-telephone-fill"></i> +84 123 456 789</li>
+                    <li><i class="bi bi-envelope-fill"></i> info@cardealership.com</li>
+                </ul>
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <p>&copy; 2024 Car Dealership. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<style>
+    footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 40px 0;
+}
+
+footer h5 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .social-icons {
+    margin-top: 20px;
+}
+
+footer .social-icons a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #007bff;
+}
+
+footer .text-center {
+    margin-top: 30px;
+}
+</style>
 @endif
 
 @yield('content')

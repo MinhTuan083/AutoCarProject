@@ -56,8 +56,6 @@ Route::post('/viewHoaDon', [CartController::class, 'viewHoaDon'])->name('viewHoa
 
 
 Route::post('/download_pdf', [PDFController::class, 'downloadPDF'])->name('download_pdf');
-=======
-
 Route::get('login', [UserController::class, 'index'])->name('login');
 Route::post('custom-login', [UserController::class, 'customLogin'])->name('login.custom');
 Route::get('registrationUser', [UserController::class, 'registrationUser'])->name('register-user');
