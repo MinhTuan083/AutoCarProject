@@ -24,7 +24,7 @@ class CarController extends Controller
         $kia_cars = Car::where('brand', 'KIA')->get();
         $mitsubishi_cars = Car::where('brand', 'MITSUBISHI')->get();
         $nissan_cars = Car::where('brand', 'NISSAN')->get();
-
+       
         return view('dashboard', compact('toyota_cars', 'hyundai_cars', 'kia_cars', 'mitsubishi_cars', 'nissan_cars'));
     }
 
@@ -77,8 +77,15 @@ class CarController extends Controller
 
     public function listCar()
     {
+        
         // Lấy danh sách các xe từ cơ sở dữ liệu
         $cars = Car::paginate(6);
+        // if($key = request()->key){
+        if( $key = request()->key){
+             //dd(request()->key);
+             $cars = Car::where('name','like','%'.$key.'%')->paginate(6);
+        }
+        // }
         // Trả về view 'cars.listcar' kèm theo dữ liệu về danh sách các xe
         return view('cars.listcar', ['cars' => $cars]);
     }
@@ -101,7 +108,17 @@ class CarController extends Controller
         // Chuyển hướng về trang danh sách xe với thông báo thành công
         return redirect("listcar")->with('message', 'Car deleted successfully');
     }
+    //Tim kiem
+    public function TimKiemCar(Request $request)
+    {
+        $ten = $request->timkiem;
+        $car = Car::find($ten);
+        if (!$car) {
+            return redirect()->back()->with('error', 'Car not found');
+        }
     
+        return view('cars.show', ['car' => $car]);
+    }
     public function showCar($id)
     {
         $car = Car::find($id);
