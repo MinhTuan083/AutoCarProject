@@ -61,7 +61,7 @@
                     }
                 </style>
                 <div class="card">
-                    <h3 class="card-header text-center bg-dark text-light">List of Cars</h3>
+                    <h3 class="card-header text-center bg-dark text-light mt-5">List of Cars</h3>
                     <div class="card-body mt-5 ">
                         <div class="row row-cols-1 row-cols-md-3 g-4 ">
                             @foreach($cars as $car)
@@ -90,6 +90,10 @@
                             @endforeach
                         </div>
                     </div>
+                    <div class="pagination justify-content-center mt-5">
+                        {{ $cars->links()}} </div>
+                        </div>
+
                 </div>
             </div>
         </div>

@@ -12,12 +12,18 @@ class CarSeeder extends Seeder
     /**
      * Run the database seeds.
      */
-    //php artisan db:seed --class=CarSeeder			
+    //php artisan db:seed --class=CarSeeder
+    //php artisan db:seed --class=BrandSeeder			
+    //php artisan db:seed --class=CarTypesSeeder			
+    //php artisan db:seed --class=EmployeesSeeder			
+    //php artisan db:seed --class=InvoicesSeeder			
+
     public function run(): void
     {
         DB::table('cars')->insert([
             'name' => 'CAMRY',
             'brand' => 'TOYOTA',
+            'cartype' => 'SEDAN',
             'model' => '2.0Q',
             'year' => '2024',
             'price' => '1105000000',
@@ -29,6 +35,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'COROLLA ALTIS ',
             'brand' => 'TOYOTA',
+            'cartype' => 'SEDAN',
             'model' => '1.8Q',
             'year' => '2024',
             'price' => '725000000',
@@ -40,6 +47,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'FORTUNER',
             'brand' => 'TOYOTA',
+            'cartype' => 'SUV',
             'model' => '2.4AT 4X2',
             'year' => '2024',
             'price' => ' 1055000000 ',
@@ -51,6 +59,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'HILUX',
             'brand' => 'TOYOTA',
+            'cartype' => 'PICK-UP TRUCK',
             'model' => '2.4L 4X2 AT',
             'year' => '2024',
             'price' => '825000000',
@@ -62,6 +71,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'ALPHARD',
             'brand' => 'TOYOTA',
+            'cartype' => 'MPV',
             'model' => 'LUXURY',
             'year' => '2024',
             'price' => '4370000000',
@@ -73,6 +83,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'INNOVA CROSS',
             'brand' => 'TOYOTA',
+            'cartype' => 'MPV',
             'model' => 'HEV',
             'year' => '2024',
             'price' => '998000000',
@@ -84,6 +95,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'INNOVA',
             'brand' => 'TOYOTA',
+            'cartype' => 'MPV',
             'model' => '2.0E',
             'year' => '2024',
             'price' => '755000000',
@@ -95,6 +107,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'LAND CRUISER PRADO',
             'brand' => 'TOYOTA',
+            'cartype' => 'SUV',
             'model' => 'Prado',
             'year' => '2024',
             'price' => '2628000000',
@@ -106,6 +119,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'LAND CRUISER',
             'brand' => 'TOYOTA',
+            'cartype' => 'SUV',
             'model' => 'LC300',
             'year' => '2024',
             'price' => '4286000000',
@@ -117,6 +131,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'HYUNDAI GRAND i10',
             'brand' => 'HYUNDAI',
+            'cartype' => 'HATCHBACK',
             'model' => '1.2 AT',
             'year' => '2024',
             'price' => '455000000',
@@ -128,6 +143,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'ACCENT',
             'brand' => 'HYUNDAI',
+            'cartype' => 'SEDAN',
             'model' => '1.4 MT',
             'year' => '2024',
             'price' => '472000000',
@@ -139,6 +155,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'TUCSON',
             'brand' => 'HYUNDAI',
+            'cartype' => 'CUV',
             'model' => '2.0 Oil',
             'year' => '2024',
             'price' => '959000000',
@@ -150,6 +167,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'SANTAFE',
             'brand' => 'HYUNDAI',
+            'cartype' => 'CUV',
             'model' => '2.2 Oil',
             'year' => '2024',
             'price' => '1269000000',
@@ -161,6 +179,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'ELANTRA',
             'brand' => 'HYUNDAI',
+            'cartype' => 'SEDAN',
             'model' => '2.0 AT',
             'year' => '2024',
             'price' => '729000000',
@@ -172,6 +191,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'PALISADE',
             'brand' => 'HYUNDAI',
+            'cartype' => 'SUV',
             'model' => 'Palisade Prestige 7 seats',
             'year' => '2024',
             'price' => '1559000000',
@@ -183,6 +203,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'CUSTIN',
             'brand' => 'HYUNDAI',
+            'cartype' => 'MPV',
             'model' => 'Custin 2.0T-GDi',
             'year' => '2024',
             'price' => '999000000',
@@ -194,6 +215,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'STARGAZER',
             'brand' => 'HYUNDAI',
+            'cartype' => 'MPV',
             'model' => '1.5 AT',
             'year' => '2024',
             'price' => '685000000',
@@ -205,6 +227,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'XPANDER',
             'brand' => 'MITSUBISHI',
+            'cartype' => 'SUV',
             'model' => 'AT PREMINUM',
             'year' => '2024',
             'price' => '658000000',
@@ -216,6 +239,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'PAJERO SPORT',
             'brand' => 'MITSUBISHI',
+            'cartype' => 'SUV',
             'model' => 'DIESEL 4X4 AT',
             'year' => '2024',
             'price' => '1365000000',
@@ -227,6 +251,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => ' OUTLANDER',
             'brand' => 'MITSUBISHI',
+            'cartype' => 'CUV',
             'model' => '2.0 CVT',
             'year' => '2024',
             'price' => '825000000',
@@ -238,6 +263,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => ' TRITON',
             'brand' => 'MITSUBISHI',
+            'cartype' => 'PICK-UP TRUCK',
             'model' => '4x4 AT ATHLETE',
             'year' => '2024',
             'price' => '905000000',
@@ -249,6 +275,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => ' ATTRAGE',
             'brand' => 'MITSUBISHI',
+            'cartype' => 'SEDAN',
             'model' => 'MT',
             'year' => '2024',
             'price' => '380000000',
@@ -260,6 +287,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => ' XFORCE',
             'brand' => 'MITSUBISHI',
+            'cartype' => 'SUV',
             'model' => 'EXCEED',
             'year' => '2024',
             'price' => '640000000',
@@ -271,6 +299,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'ALMERA',
             'brand' => 'NISSAN',
+            'cartype' => 'SEDAN',
             'model' => 'CVT',
             'year' => '2024',
             'price' => '539000000',
@@ -282,6 +311,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'KICKS',
             'brand' => 'NISSAN',
+            'cartype' => 'CUV',
             'model' => 'E-POWER',
             'year' => '2024',
             'price' => '789000000',
@@ -294,6 +324,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'NAVARA',
             'brand' => 'NISSAN',
+            'cartype' => 'PICK-UP TRUCK',
             'model' => 'CVT',
             'year' => '2024',
             'price' => '699000000',
@@ -305,6 +336,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'MORNING',
             'brand' => 'KIA',
+            'cartype' => 'HATCHBACK',
             'model' => 'PREMINUM HATCHBACK',
             'year' => '2024',
             'price' => '349000000',
@@ -316,6 +348,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'SOLUTO',
             'brand' => 'KIA',
+            'cartype' => 'SEDAN',
             'model' => 'AT DELUXE',
             'year' => '2024',
             'price' => '386000000',
@@ -327,6 +360,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'K3',
             'brand' => 'KIA',
+            'cartype' => 'SEDAN',
             'model' => 'TURBO GT',
             'year' => '2024',
             'price' => '549000000',
@@ -338,6 +372,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'K5',
             'brand' => 'KIA',
+            'cartype' => 'SEDAN',
             'model' => '2.5 GT-LINE',
             'year' => '2024',
             'price' => '859000000',
@@ -350,6 +385,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'SONET',
             'brand' => 'KIA',
+            'cartype' => 'SUV',
             'model' => '1.5 LUXURY',
             'year' => '2024',
             'price' => '519000000',
@@ -361,6 +397,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'SELTOS',
             'brand' => 'KIA',
+            'cartype' => 'CUV',
             'model' => '1.4 LUXURY',
             'year' => '2024',
             'price' => '599000000',
@@ -372,6 +409,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'SPORTAGE',
             'brand' => 'KIA',
+            'cartype' => 'CUV',
             'model' => '2.0 LUXURY',
             'year' => '2024',
             'price' => '799000000',
@@ -383,6 +421,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'SORENTO',
             'brand' => 'KIA',
+            'cartype' => 'SUV',
             'model' => '2.2D LUXURY',
             'year' => '2024',
             'price' => '979000000',
@@ -394,6 +433,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'CARNIVAL',
             'brand' => 'KIA',
+            'cartype' => 'MPV',
             'model' => '2.2D LUXURY',
             'year' => '2024',
             'price' => '1169000000',
@@ -405,6 +445,7 @@ class CarSeeder extends Seeder
         DB::table('cars')->insert([
             'name' => 'CARENS',
             'brand' => 'KIA',
+            'cartype' => 'SUV',
             'model' => '1.5 MT DELUXE',
             'year' => '2024',
             'price' => '589000000',

@@ -1,10 +1,14 @@
 <?php
 
+use App\Http\Controllers\CRUDCarController;
+use App\Http\Controllers\CRUDEmployeeController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Car;
 use App\Http\Controllers\CarController;
 use App\Models\Brand;
 use App\Http\Controllers\BrandController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\PDFController;
 
 
 /*
@@ -35,6 +39,31 @@ Route::post('update-brand/{id}', [BrandController::class, 'updateBrand'])->name(
 Route::delete('delete-brand/{id}', [BrandController::class, 'deleteBrand'])->name('brands.delete');
 
 
+//Cart
+Route::post('/cart/add/{id}', [CartController::class, 'add'])->name('cart.add');
+Route::get('/cart', [CartController::class, 'view'])->name('cart.view');
+Route::get('/viewThanhToan', [CartController::class, 'viewThanhToan'])->name('viewThanhToan');
+
+//Hóa đơn
+Route::post('/viewHoaDon', [CartController::class, 'viewHoaDon'])->name('viewHoaDon');
+
+
+Route::post('/download_pdf', [PDFController::class, 'downloadPDF'])->name('download_pdf');
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('car-types', [CRUDCarController::class, 'listCartp'])->name('view');
+Route::get('create', [CRUDCarController::class, 'create'])->name('car-types.create');
+Route::get('addcartype', [CRUDCarController::class, 'create'])->name('addcartype');
+Route::post('addcartype', [CRUDCarController::class, 'store'])->name('carsstore');
+Route::get('edit/{id}', [CRUDCarController::class, 'edit'])->name('edit');
+Route::put('update/{carType}', [CRUDCarController::class, 'update'])->name('update');
+Route::delete('deletecar/{id}', [CRUDCarController::class, 'deleteCar'])->name('deleteCar');
+
+
+Route::get('employee', [CRUDEmployeeController::class, 'listEmp'])->name('viewEmp');
+Route::get('addeployee', [CRUDEmployeeController::class, 'create'])->name('employees.create');
+Route::post('addeployee', [CRUDEmployeeController::class, 'store'])->name('employees.store');
+Route::get('employees/{id}/edit', [CRUDEmployeeController::class, 'edit'])->name('employees.edit');
+Route::put('employees/{employee}', [CRUDEmployeeController::class, 'update'])->name('employees.update');
+Route::delete('delete/{id}', [CRUDEmployeeController::class, 'deleteEmp'])->name('deleteEmp');
