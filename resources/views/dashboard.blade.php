@@ -172,7 +172,6 @@
                         });
                     });
                 });
-                
             </script>
         </div>
     </nav>
@@ -514,18 +513,18 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-   <!--banner qc-->
+    <!--banner qc-->
     <div class="container">
         <div class="banner">
-        <h2>Giá Xe Sài Gòn và Khuyến Mãi</h2>
-            <img src="{{ asset('banner/banner.jpg') }}" alt="Banner 1" >
-            <p>Đừng bỏ lỡ cơ hội vàng để sở hữu ngay các dòng xe Kia Sài Gòn tuyệt vời trong tháng này! Chương trình đặc biệt với ưu đãi lớn, đăng ký nhanh chóng, nhận ngay tiền mặt, bảo hiểm hấp dẫn, phụ kiện chất lượng cao và những phần quà giá trị đang chờ đón bạn! Hãy nhanh tay, số lượng có hạn!<a href="#">Xem chi tiết</a></p>
+            <h2>Car Prices in Saigon and Promotions</h2>
+            <img src="{{ asset('banner/banner.jpg') }}" alt="Banner 1">
+            <p>Don't miss the golden opportunity to own one of the amazing Kia Saigon cars this month! Special program with great incentives, quick registration, instant cash, attractive insurance, high-quality accessories, and valuable gifts are waiting for you! Hurry up, limited quantity! <a href="#">See details</a></p>
         </div>
         <div class="banner">
-        <h2>XE OTO TRẢ GÓP</h2> 
+            <h2>Car Installment Plans</h2>
             <img src="{{ asset('banner/banner1.jpg') }}" alt="Banner 2">
-            <p>Hãy trải nghiệm sự hoàn hảo và tiện lợi mỗi khi mua xe tại TP.Hồ Chí Minh với chương trình vay mua xe Kia đặc biệt trong tháng này! Lãi suất cạnh tranh, ưu đãi hấp dẫn, và những phần quà giá trị sẽ là lựa chọn hoàn hảo cho bạn. Đừng bỏ lỡ cơ hội này với nhiều ưu đãi độc quyền đang chờ đón.<a href="#">Xem chi tiết</a>        </p>
-            </div>
+            <p>Experience perfection and convenience every time you buy a car in Ho Chi Minh City with the special Kia car loan program this month! Competitive interest rates, attractive incentives, and valuable gifts will be the perfect choice for you. Don't miss this opportunity with many exclusive offers awaiting. <a href="#">See details</a></p>
+        </div>
     </div>
     <!--  -->
     <h3 class="popular-news-title">Popular News</h3>
@@ -556,8 +555,7 @@
     </div>
     <!--css cho banner  -->
     <style>
-     
-  .container {
+        .container {
             display: flex;
             justify-content: space-between;
         }
@@ -578,15 +576,18 @@
         }
 
         .banner h2 {
-            text-align: left ;
-           
+            text-align: left;
+
         }
+
         .banner p {
-            font-size: 1.2em; /* Điều chỉnh kích thước chữ tại đây */
-            text-align: left; 
+            font-size: 1.2em;
+            /* Điều chỉnh kích thước chữ tại đây */
+            text-align: left;
             font-weight: bold;
             opacity: 0.7;
         }
+
         .popular-news-title {
             text-align: center;
             margin-top: 200px;
@@ -707,7 +708,6 @@
         </div>
     </footer>
     <style>
-
         footer {
             background-color: #343a40;
             color: #fff;
