@@ -513,20 +513,6 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-<<<<<<< HEAD
-    <!--banner qc-->
-    <div class="container">
-        <div class="banner">
-            <h2>Car Prices in Saigon and Promotions</h2>
-            <img src="{{ asset('banner/banner.jpg') }}" alt="Banner 1">
-            <p>Don't miss the golden opportunity to own one of the amazing Kia Saigon cars this month! Special program with great incentives, quick registration, instant cash, attractive insurance, high-quality accessories, and valuable gifts are waiting for you! Hurry up, limited quantity! <a href="#">See details</a></p>
-        </div>
-        <div class="banner">
-            <h2>Car Installment Plans</h2>
-            <img src="{{ asset('banner/banner1.jpg') }}" alt="Banner 2">
-            <p>Experience perfection and convenience every time you buy a car in Ho Chi Minh City with the special Kia car loan program this month! Competitive interest rates, attractive incentives, and valuable gifts will be the perfect choice for you. Don't miss this opportunity with many exclusive offers awaiting. <a href="#">See details</a></p>
-        </div>
-=======
    <!--banner qc-->
    <h1 style="text-align: center; margin-top: 200px; margin-bottom: 50px;">Promotion</h1>
     <div class="container">
@@ -540,7 +526,7 @@
                     <img src="{{ asset('banner/banner1.jpg') }}" alt="Banner 2">
                     <p>Experience perfection and convenience every time you buy a car in Ho Chi Minh City. Ho Chi Minh City with a special Kia car loan program this month! Competitive interest rates, attractive incentives, and valuable gifts will be the perfect choice for you. Don't miss this opportunity with many exclusive offers awaiting. <a href="#">View details</a> </p>
             </div>
->>>>>>> origin/master
+
     </div>
     <!--  -->
     <h3 class="popular-news-title">Popular News</h3>
