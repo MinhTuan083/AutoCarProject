@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\File;
 use App\Models\Brand;
 use App\Models\CarType;
 
+use App\Models\User;
+
+use Illuminate\Support\Facades\Auth;
 class CarController extends Controller
 {
     /**
@@ -15,6 +18,7 @@ class CarController extends Controller
      */
     public function index()
     {
+
         $toyota_cars = Car::where('brand', 'TOYOTA')->get();
         $hyundai_cars = Car::where('brand', 'HYUNDAI')->get();
         $kia_cars = Car::where('brand', 'KIA')->get();

@@ -93,9 +93,37 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('cart.view') }}">Cart <span class="badge badge-pill badge-danger">{{ count(session('cart', [])) }}</span></a>
                 </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Chi Nhánh
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{{ route('register-CN') }}">Thêm chi nhánh</a></li>
+                        <li><a class="dropdown-item" href="{{ route('CN.list') }}">Danh sách chi nhánh</a></li>
+                    </ul>
+                </li>
+                @guest
+                <li class="nav-item">
+                   <a class="nav-link" href="{{ route('login') }}">ListUser</a>
+                </li>
+                @else
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown ten" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Users
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{{ route('user.list') }}">List User</a></li>
+                        <li><a class="dropdown-item" href="{{ route('signout') }}">Sign out</a></li>
+                    </ul>
+                </li>
+                @endguest
+                
+
             </ul>
         </div>
         <script>
@@ -113,6 +141,7 @@
         </script>
     </div>
 </nav>
+
 
 @if (Request::is('dashboard'))
     <div id="carouselBanner" class="carousel slide mb-5" data-bs-ride="carousel">
@@ -215,6 +244,9 @@
     .card-title {
         margin-top: 15px; /* Điều chỉnh khoảng cách dưới tiêu đề */
     }
+
+
+
 
     .card-text {
         margin-bottom: 10px; /* Loại bỏ khoảng cách trên nội dung của thẻ card */
