@@ -16,6 +16,7 @@
                             <div class="col-md-6 order-md-1">
                                 <p><strong>Name: <span style="font-size: 1em;">{{ $car->name }}</strong></span></p>
                                 <p><strong>Brand: <span style="font-size: 1em;">{{ $car->brand }}</strong></span></p>
+                                <p><strong>Car Type: <span style="font-size: 1em;">{{ $car->cartype }}</strong></span></p>
                                 <p><strong>Model: <span style="font-size: 1em;">{{ $car->model }}</strong></span></p>
                                 <p><strong>Year: <span style="font-size: 1em;">{{ $car->year }}</strong></span></p>
                                 <p><strong>Price: <span style="font-size: 1em; color: red;">{{ number_format($car->price) }} VND</strong></span></p>

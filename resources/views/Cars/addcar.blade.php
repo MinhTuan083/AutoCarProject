@@ -29,6 +29,18 @@
                                     <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
+                            <div class="mb-3">
+                                <label for="cartype" class="form-label">Car Type:</label>
+                                <select id="cartype" class="form-control" name="cartype" required>
+                                    <option value="" disabled selected>Select Car Type</option>
+                                    @foreach($cartypes as $cartype)
+                                        <option value="{{ $cartype->name }}">{{ $cartype->name }}</option>
+                                    @endforeach
+                                </select>
+                                @error('cartype')
+                                    <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="model" class="form-label">Model</label>

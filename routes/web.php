@@ -52,7 +52,6 @@ Route::post('/download_pdf', [PDFController::class, 'downloadPDF'])->name('downl
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('dashboard', [CRUDCarController::class, 'index'])->name('dashboard');
 Route::get('car-types', [CRUDCarController::class, 'listCartp'])->name('view');
 Route::get('create', [CRUDCarController::class, 'create'])->name('car-types.create');
 Route::get('addcartype', [CRUDCarController::class, 'create'])->name('addcartype');
