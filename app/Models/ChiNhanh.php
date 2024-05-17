@@ -2,15 +2,17 @@
 
 namespace App\Models;
 
+// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
 
-class Car extends Model
+class ChiNhanh extends Authenticatable
 {
     use HasFactory;
 
-    protected $table = 'cars'; // Tên của bảng trong cơ sở dữ liệu
+    protected $table = 'chinhanh'; // Tên của bảng trong cơ sở dữ liệu
 
     protected $primaryKey = 'id'; // Khóa chính của bảng
 
@@ -28,8 +30,6 @@ class Car extends Model
     {
         return $this->belongsTo(Brand::class);
     }
-    public function cartype(): BelongsTo
-    {
-        return $this->belongsTo(CarType::class);
-    }
+
+    
 }
