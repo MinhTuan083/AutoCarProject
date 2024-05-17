@@ -111,7 +111,7 @@
                             CarTypes
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="{{ route('addcar') }}">Add New CarTypes</a></li>
+                            <li><a class="dropdown-item" href="{{ route('addcartype') }}">Add New CarTypes</a></li>
                             <li><a class="dropdown-item" href="{{ route('view') }}">List CarTypes</a></li>
                         </ul>
                     </li>
