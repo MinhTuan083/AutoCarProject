@@ -156,8 +156,6 @@
                         </ul>
                     </li>
                     @endguest
-
-
                 </ul>
             </div>
             <script>
