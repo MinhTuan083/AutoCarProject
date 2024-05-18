@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Employee;
 use Illuminate\Http\Request;
-
+use App\Models\Car;
 use App\Models\CarType;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\File;
@@ -23,6 +23,7 @@ class CRUDCarController extends Controller
 
     public function create()
     {   
+        
         $response = Http::get('https://restcountries.com/v3.1/all');
     $countries = $response->json();
     // Sắp xếp danh sách quốc gia theo thứ tự ABC dựa trên tên
@@ -127,6 +128,6 @@ class CRUDCarController extends Controller
         return redirect()->route('view')->with('success', 'Loại xe đã được xoá thành công');
 
     }
-    //
+
     
 }

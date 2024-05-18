@@ -12,6 +12,7 @@
             <th>Email</th>
             <th>Total Price</th>
             <th>Total Quantity</th>
+            <th>Payment Date</th>
             <th>Action</th>
         </tr>
         @foreach($invoices as $invoice)
@@ -22,6 +23,7 @@
             <td>{{ $invoice->email }}</td>
             <td>{{ $invoice->total_price }}</td>
             <td>{{ $invoice->total_quantity }}</td>
+            <td>{{ $invoice->created_at->format('Y-m-d') }}</td>
             <td>
                 <form action="{{ route('delete.invoice', $invoice->id) }}" method="POST">
                     @csrf

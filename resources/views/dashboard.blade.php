@@ -70,6 +70,8 @@
             margin-right: 10px;
             /* Space between the logo and the text */
         }
+
+      
     </style>
 </head>
 
@@ -94,34 +96,12 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="{{ route('addcar') }}">Add New Car</a></li>
-                            <li><a class="dropdown-item" href="{{ route('listcar') }}">List Cars</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Brands
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="{{ route('addbrand') }}">Add New Brand</a></li>
-                            <li><a class="dropdown-item" href="{{ route('listbrand') }}">List Brands</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            CarTypes
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="{{ route('addcartype') }}">Add New CarTypes</a></li>
+                            <li><a class="dropdown-item" href="{{ route('listcar') }}">List Cars</a></li>
+                            <li><a class="dropdown-item" href="{{ route('listbrand') }}">List Brands</a></li>
                             <li><a class="dropdown-item" href="{{ route('view') }}">List CarTypes</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Employee
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="{{ route('employees.create') }}">Add Employee</a></li>
-                            <li><a class="dropdown-item" href="{{ route('viewEmp') }}">List Employee</a></li>
+                            <li><a class="dropdown-item" href="{{ route('view.invoices') }}">List Invoices</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -151,6 +131,8 @@
                             Users
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{{ route('employees.create') }}">Add Employee</a></li>
+                            <li><a class="dropdown-item" href="{{ route('viewEmp') }}">List Employee</a></li>
                             <li><a class="dropdown-item" href="{{ route('user.list') }}">List User</a></li>
                             <li><a class="dropdown-item" href="{{ route('signout') }}">Sign out</a></li>
                         </ul>
@@ -159,6 +141,7 @@
 
 
                 </ul>
+               
             </div>
             <script>
                 document.addEventListener("DOMContentLoaded", function() {
@@ -513,19 +496,19 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-   <!--banner qc-->
-   <h1 style="text-align: center; margin-top: 200px; margin-bottom: 50px;">Promotion</h1>
+    <!--banner qc-->
+    <h1 style="text-align: center; margin-top: 200px; margin-bottom: 50px;">Promotion</h1>
     <div class="container">
         <div class="banner">
-        <h2>Saigon Car Prices and Promotions</h2>
-            <img src="{{ asset('banner/banner.jpg') }}" alt="Banner 1" >
+            <h2>Saigon Car Prices and Promotions</h2>
+            <img src="{{ asset('banner/banner.jpg') }}" alt="Banner 1">
             <p>Don't miss the golden opportunity to own some great Kia Saigon cars this month! Special program with great deals, quick registration, instant cash receipt, attractive insurance, high-quality accessories and valuable gifts await you! Hurry, the quantity is limited! <a href="#">View details</a></p>
         </div>
         <div class="banner">
-        <h2>INSTALLMENT CARS</h2>
-                    <img src="{{ asset('banner/banner1.jpg') }}" alt="Banner 2">
-                    <p>Experience perfection and convenience every time you buy a car in Ho Chi Minh City. Ho Chi Minh City with a special Kia car loan program this month! Competitive interest rates, attractive incentives, and valuable gifts will be the perfect choice for you. Don't miss this opportunity with many exclusive offers awaiting. <a href="#">View details</a> </p>
-            </div>
+            <h2>INSTALLMENT CARS</h2>
+            <img src="{{ asset('banner/banner1.jpg') }}" alt="Banner 2">
+            <p>Experience perfection and convenience every time you buy a car in Ho Chi Minh City. Ho Chi Minh City with a special Kia car loan program this month! Competitive interest rates, attractive incentives, and valuable gifts will be the perfect choice for you. Don't miss this opportunity with many exclusive offers awaiting. <a href="#">View details</a> </p>
+        </div>
 
     </div>
     <!--  -->
@@ -704,10 +687,10 @@
                     </div>
                 </div>
             </div>
-             
-    <button id="scrollToTopBtn" class="scrollToTopBtn">
-        <i class="bi bi-arrow-up-circle"></i>
-    </button>
+            <!--thiet ke nut cuon len man hinh-->
+            <button id="scrollToTopBtn" class="scrollToTopBtn">
+                <i class="bi bi-arrow-up-circle"></i>
+            </button>
             <div class="text-center mt-3">
                 <p>&copy; 2024 Car Dealership. All rights reserved.</p>
             </div>
@@ -765,50 +748,58 @@
         footer .text-center {
             margin-top: 30px;
         }
+
+        /* css nut cuon trang chu */
         .scrollToTopBtn {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        width: 50px;
-        height: 50px;
-        display: none; /* Ẩn nút ban đầu */
-        align-items: center;
-        justify-content: center;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 50%;
-        cursor: pointer;
-        z-index: 1000;
-    }
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            display: none;
+            /* Ẩn nút ban đầu */
+            align-items: center;
+            justify-content: center;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 1000;
+        }
 
-    .scrollToTopBtn i {
-        font-size: 30px;
-    }
+        .scrollToTopBtn i {
+            font-size: 30px;
+        }
 
-    .scrollToTopBtn:hover {
-        background-color: #0056b3;
-    }
+        .scrollToTopBtn:hover {
+            background-color: #0056b3;
+        }
     </style>
     @endif
 
     @yield('content')
+    <!-- viet su kien cho nut cuon trang chu -->
     <script>
-    // Hiển thị nút khi người dùng cuộn xuống 100px từ đầu trang
-    window.onscroll = function() {
-        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            scrollToTopBtn.style.display = "flex"; 
-        } else {
-            scrollToTopBtn.style.display = "none";
-        }
-    };
+        // Hiển thị nút khi người dùng cuộn xuống 100px từ đầu trang
+        window.onscroll = function() {
+            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopBtn.style.display = "flex";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
 
-    // Cuộn lên đầu trang khi người dùng nhấn vào nút
-    document.getElementById("scrollToTopBtn").onclick = function() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-</script>
+        // Cuộn lên đầu trang khi người dùng nhấn vào nút
+        document.getElementById("scrollToTopBtn").onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        };
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
 </body>
