@@ -54,8 +54,8 @@
     {
         $request->validate([
             'name' => 'required|string|max:255|regex:/^[\p{L} ]+$/u',
-            'email' => 'required|email|regex:/@gmail\.com$/|unique:employees,email' . $employee->id,
-            'phone' => 'required|string|min:10|unique:employees,phone',
+            'email' => 'required|email|regex:/@gmail\.com$/' ,
+            'phone' => 'required|string|min:10',
             'address' => 'nullable|string',
             'sex' => 'required|in:male,female',
             'password' => 'nullable|string|min:6|confirmed',
@@ -70,7 +70,8 @@
         $employee->sex = $request->input('sex');
 
         if ($request->input('password')) {
-            $employee->password = Hash::make($request->input('password'));
+            $employee->password = $request->input('password'); // Lưu trực tiếp không mã hóa
+           // $employee->password = Hash::make($request->input('password'));mã hóa mật khẩu
         }
 
       
