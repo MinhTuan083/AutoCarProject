@@ -86,7 +86,13 @@
                             </div>
                             <div class="mb-3">
                                 <label for="fuel" class="form-label">Fuel</label>
-                                <input type="text" class="form-control" id="fuel" name="fuel" value="{{ $car->fuel }}" required>
+                                <select id="fuel" class="form-control" name="fuel" required>
+                                    <option value="" disabled selected>Select Fuel</option>
+                                    <option value="Gasolie">Gasolie</option>
+                                    <option value="Electric">Electric</option>
+                                    <option value="Oil">Oil</option>
+                                    <option value="Hybrid">Hybrid</option>
+                                </select>
                                 @error('fuel')
                                     <div class="text-danger">{{ $message }}</div>
                                 @enderror
