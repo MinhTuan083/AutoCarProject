@@ -6,7 +6,11 @@ use App\Models\Car;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use App\Models\Brand;
+use App\Models\CarType;
 
+use App\Models\User;
+
+use Illuminate\Support\Facades\Auth;
 class CarController extends Controller
 {
     /**
@@ -14,13 +18,21 @@ class CarController extends Controller
      */
     public function index()
     {
-        return view('dashboard');
+
+        $toyota_cars = Car::where('brand', 'TOYOTA')->get();
+        $hyundai_cars = Car::where('brand', 'HYUNDAI')->get();
+        $kia_cars = Car::where('brand', 'KIA')->get();
+        $mitsubishi_cars = Car::where('brand', 'MITSUBISHI')->get();
+        $nissan_cars = Car::where('brand', 'NISSAN')->get();
+       
+        return view('dashboard', compact('toyota_cars', 'hyundai_cars', 'kia_cars', 'mitsubishi_cars', 'nissan_cars'));
     }
 
     public function addCar()
     {
         $brands = Brand::all();
-        return view('cars.addcar', ['brands' => $brands]);
+        $cartypes = CarType::all();
+        return view('cars.addcar', ['brands' => $brands], ['cartypes' => $cartypes]);
     }    
     /**
      * Store a newly created car in storage.
@@ -37,6 +49,7 @@ class CarController extends Controller
             'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
             'seats' => 'required|integer', // Validate số chỗ
             'fuel' => 'required', // Validate nhiên liệu
+            'cartype' => 'required',
         ]);
 
         // Xử lý việc lưu file ảnh và lấy đường dẫn đã lưu
@@ -56,18 +69,35 @@ class CarController extends Controller
         $car->image = $imageName ?? null; // Lưu tên hình ảnh vào cơ sở dữ liệu
         $car->seats = $request->seats; // Lưu số chỗ
         $car->fuel = $request->fuel; // Lưu nhiên liệu
+        $car->cartype= $request->cartype; 
         $car->save();
 
         return redirect()->route('listcar')->with('success', 'Car added successfully');
     }
 
     public function listCar()
+<<<<<<< HEAD
+{
+    // Lấy danh sách các xe từ cơ sở dữ liệu, sắp xếp theo created_at giảm dần và phân trang
+    $cars = Car::orderBy('created_at', 'desc')->paginate(6);
+    // Trả về view 'cars.listcar' kèm theo dữ liệu về danh sách các xe
+    return view('cars.listcar', compact('cars'));
+}
+=======
     {
+        
         // Lấy danh sách các xe từ cơ sở dữ liệu
         $cars = Car::paginate(6);
+        // if($key = request()->key){
+        if( $key = request()->key){
+             //dd(request()->key);
+             $cars = Car::where('name','like','%'.$key.'%')->paginate(6);
+        }
+        // }
         // Trả về view 'cars.listcar' kèm theo dữ liệu về danh sách các xe
         return view('cars.listcar', ['cars' => $cars]);
     }
+>>>>>>> origin/master
     public function deleteCar($id)
     {
         // Tìm và xóa xe theo ID
@@ -87,7 +117,17 @@ class CarController extends Controller
         // Chuyển hướng về trang danh sách xe với thông báo thành công
         return redirect("listcar")->with('message', 'Car deleted successfully');
     }
+    //Tim kiem
+    public function TimKiemCar(Request $request)
+    {
+        $ten = $request->timkiem;
+        $car = Car::find($ten);
+        if (!$car) {
+            return redirect()->back()->with('error', 'Car not found');
+        }
     
+        return view('cars.show', ['car' => $car]);
+    }
     public function showCar($id)
     {
         $car = Car::find($id);
@@ -109,6 +149,7 @@ class CarController extends Controller
         'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         'seats' => 'required|integer',
         'fuel' => 'required|string',
+        'cartype' => 'required|string|max:255',
     ]);
     
 
@@ -122,6 +163,8 @@ class CarController extends Controller
     $car->description = $request->input('description');
     $car->seats = $request->input('seats');
     $car->fuel = $request->input('fuel');
+    $car->cartype = $request->input('cartype');
+
 
     if ($request->hasFile('image')) {
         // Xử lý việc lưu file ảnh và lấy đường dẫn đã lưu
@@ -146,7 +189,8 @@ public function editCar($id)
 {
     $car = Car::findOrFail($id);
     $brands = Brand::all(); // Lấy danh sách các thương hiệu
-    return view('cars.edit', compact('car', 'brands')); // Truyền biến $brands vào view
+    $cartypes = CarType::all(); // Lấy danh sách các thương hiệu
+    return view('cars.edit', compact('car', 'brands', 'cartypes')); // Truyền biến $brands vào view
 }
 
 }

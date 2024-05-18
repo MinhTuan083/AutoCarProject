@@ -14,7 +14,7 @@
                                 <img src="/./images/{{ $brand->logo }}" class="img-fluid rounded shadow-sm mb-3" alt="{{ $brand->name }}" style="max-height: 350px;">
                             </div>
                             <div class="col-md-6">
-                                <p class="h4"><strong>Name:</strong> {{ $brand->name }}</p>
+                                <p class="h4"><strong>Name:</strong> {{ $brand->name }}</strong></p>
                                 <p class="h5"><strong>Country:</strong> {{ $brand->country }}</p>
                                 <p class="h5"><strong>Founded Year:</strong> {{ $brand->founded_year }}</p>
                                 <p class="h5"><strong>Description:</strong></p>

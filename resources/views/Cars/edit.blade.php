@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <div class="card shadow">
+                <div class="card shadow mt-5">
                     <h3 class="card-header text-center bg-dark text-light">Update Car</h3>
                     <div class="card-body">
                         <form method="POST" action="{{ route('cars.update', ['id' => $car->id]) }}" enctype="multipart/form-data">
@@ -21,12 +21,24 @@
                             <div class="mb-3">
                                 <label for="brand" class="form-label">Brand</label>
                                 <select id="brand" class="form-control" name="brand" required>
-                                    <option value="" disabled>Select Brand</option>
+                                    <option value="" disabled selected>Select Brand</option>
                                     @foreach($brands as $brand)
                                         <option value="{{ $brand->name }}">{{ $brand->name }}</option>
                                     @endforeach
                                 </select>
                                 @error('brand')
+                                    <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="mb-3">
+                                <label for="cartype" class="form-label">Car Type:</label>
+                                <select id="cartype" class="form-control" name="cartype" required>
+                                    <option value="" disabled selected>Select Car Type</option>
+                                    @foreach($cartypes as $cartype)
+                                        <option value="{{ $cartype->name }}">{{ $cartype->name }}</option>
+                                    @endforeach
+                                </select>
+                                @error('cartype')
                                     <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
@@ -74,7 +86,13 @@
                             </div>
                             <div class="mb-3">
                                 <label for="fuel" class="form-label">Fuel</label>
-                                <input type="text" class="form-control" id="fuel" name="fuel" value="{{ $car->fuel }}" required>
+                                <select id="fuel" class="form-control" name="fuel" required>
+                                    <option value="" disabled selected>Select Fuel</option>
+                                    <option value="Gasolie">Gasolie</option>
+                                    <option value="Electric">Electric</option>
+                                    <option value="Oil">Oil</option>
+                                    <option value="Hybrid">Hybrid</option>
+                                </select>
                                 @error('fuel')
                                     <div class="text-danger">{{ $message }}</div>
                                 @enderror

@@ -60,8 +60,17 @@
                         height: auto;
                     }
                 </style>
+                <li >
+                  <p>
+                    <form action="" class="form-inline">
+                    <input type="search" name="key" id="key">
+                    <input type="submit" value="Tìm kiếm">
+                        
+                    </form>
+                  </p>
+                </li>
                 <div class="card">
-                    <h3 class="card-header text-center bg-dark text-light">List of Cars</h3>
+                    <h3 class="card-header text-center bg-dark text-light mt-5">List of Cars</h3>
                     <div class="card-body mt-5 ">
                         <div class="row row-cols-1 row-cols-md-3 g-4 ">
                             @foreach($cars as $car)

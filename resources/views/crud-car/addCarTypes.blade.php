@@ -8,7 +8,7 @@
         {{ session('success') }}
     </div>
     @endif
-    <form action="{{ route('cars.store') }}" method="POST" enctype="multipart/form-data">
+    <form action="{{ route('carsstore') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <label for="name">Tên:</label>
@@ -27,7 +27,7 @@
         </div>
         <div class="form-group">
             <label for="image">Hình ảnh:</label>
-            <input type="file" class="form-control-file" id="image" name="image">
+            <input type="file" class="form-control-file" id="image" name="image" required>
         </div>
         <div class="form-group">
             <label for="country">Quốc gia:</label>

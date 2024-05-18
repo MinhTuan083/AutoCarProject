@@ -27,7 +27,7 @@ class BrandController extends Controller
             'country' => 'required|string|max:255',
             'founded_year' => 'required|integer',
             'description' => 'nullable|string',
-            'logo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'logo' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
         // Xử lý việc lưu file logo và lấy đường dẫn đã lưu
@@ -55,7 +55,7 @@ class BrandController extends Controller
             'country' => 'required|string|max:255',
             'founded_year' => 'required|integer',
             'description' => 'nullable|string',
-            'logo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'logo' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
         
     
