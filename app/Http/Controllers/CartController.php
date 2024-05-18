@@ -97,7 +97,7 @@ class CartController extends Controller
 
         // Lưu thông báo vào session
         session()->put('success', "Thanh toán thành công");
-        session()->forget('cart');
+    
         return view('cart.viewHoaDon', compact(
             'cart',
             'name',

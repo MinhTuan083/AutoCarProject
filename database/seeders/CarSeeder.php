@@ -12,11 +12,13 @@ class CarSeeder extends Seeder
     /**
      * Run the database seeds.
      */
-    //php artisan db:seed --class=CarSeeder
-    //php artisan db:seed --class=BrandSeeder			
-    //php artisan db:seed --class=CarTypesSeeder			
-    //php artisan db:seed --class=EmployeesSeeder			
-    //php artisan db:seed --class=InvoicesSeeder			
+    // php artisan db:seed --class=CarSeeder
+    // php artisan db:seed --class=BrandSeeder			
+    // php artisan db:seed --class=CarTypesSeeder			
+    // php artisan db:seed --class=EmployeesSeeder			
+    // php artisan db:seed --class=InvoicesSeeder	
+    // php artisan db:seed --class=DepartmentSeeder			
+
 
     public function run(): void
     {

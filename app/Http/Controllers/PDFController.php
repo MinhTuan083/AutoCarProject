@@ -38,7 +38,6 @@ class PDFController extends Controller
         $email = $request->input('email');
         $phone = $request->input('phone');
 
-        // Lấy thông tin đơn hàng từ session (đã lưu từ trước khi chuyển từ trang thanh toán)
         $cart = session()->get('cart', []);
 
         // Tính tổng tiền và tổng số lượng
@@ -52,8 +51,7 @@ class PDFController extends Controller
         // Tạo file PDF từ dữ liệu hóa đơn
         $pdf = \Barryvdh\DomPDF\Facade\Pdf::loadView('pdf.report', compact('name', 'address', 'email', 'phone', 'cart', 'totalPrice', 'totalQuantity'));
 
-        // Xóa hết dữ liệu trong session
-        $request->session()->flush();
+        session()->forget('cart');
         // Tải file PDF xuống
         return $pdf->download('report.pdf');
     }

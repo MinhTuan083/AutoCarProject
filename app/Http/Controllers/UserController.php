@@ -71,7 +71,7 @@ public function create(array $data)
     return User::create([ 
         'name' => $data['name'], 
         'email' => $data['email'], 
-        'password' => Hash::make($data['password']), 
+        'password' => \Illuminate\Support\Facades\Hash::make($data['password']), 
         'phone' => $data['phone'], // Lưu trữ số điện thoại
         // Lưu trữ đường dẫn ảnh với 'image_path' là tên cột trong database
         'image' => $data['image'] ?? null, 
@@ -112,7 +112,7 @@ public function create(array $data)
 
     public function signOut()
     {
-        Session::flush();
+        \Illuminate\Support\Facades\Session::flush();
         Auth::logout();
 
         return Redirect('login');
@@ -124,7 +124,7 @@ public function create(array $data)
     public function listUser()
     {
         if (Auth::check()) {
-            $users = User::paginate(1);
+            $users = User::paginate(5);
             return view('crud_user.list', ['users' => $users]);
         }
 
@@ -155,9 +155,9 @@ public function create(array $data)
         $newPassword = $request->input('password');
     
         // So sánh mật khẩu mới với mật khẩu hiện tại
-        if ($newPassword !== null && $newPassword !== '' && Hash::check($newPassword, $user->password) == false) {
+        if ($newPassword !== null && $newPassword !== '' && \Illuminate\Support\Facades\Hash::check($newPassword, $user->password) == false) {
             // Mật khẩu mới khác mật khẩu hiện tại, mã hóa và cập nhật mật khẩu mới
-            $user->password = Hash::make($newPassword);
+            $user->password = \Illuminate\Support\Facades\Hash::make($newPassword);
         }
         else // nếu không có thì gán lại mk cũ
         

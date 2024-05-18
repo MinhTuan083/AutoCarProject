@@ -57,7 +57,6 @@
             <input type="hidden" name="address" value="{{ $address }}">
             <input type="hidden" name="email" value="{{ $email }}">
             <input type="hidden" name="phone" value="{{ $phone }}">
-            <input type="hidden" name="cart" value="{{ $cart }}">
             <!-- Nút submit để tải xuống PDF -->
             <button type="submit" class="btn btn-primary">Invoicing</button>
         </form>
