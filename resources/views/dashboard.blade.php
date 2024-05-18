@@ -142,7 +142,6 @@
                         </ul>
                     </li>
                     @endguest
-
                     <li>
                         <form action="listcar" class="form-inline">
                             <input type="search" name="key" id="key" required>
@@ -150,7 +149,6 @@
                         </form>
 
                     </li>
-
                 </ul>
 
             </div>
