@@ -70,8 +70,6 @@
             margin-right: 10px;
             /* Space between the logo and the text */
         }
-
-      
     </style>
 </head>
 
@@ -86,9 +84,9 @@
             </button>
 
 
-       
-                
-                
+
+
+
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -120,7 +118,7 @@
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Department
+                            Department
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="{{ route('register-CN') }}">Add department</a></li>
@@ -144,18 +142,17 @@
                         </ul>
                     </li>
                     @endguest
-                    <li >
-                    
-                    <form action="listcar" class="form-inline">
-                    <input type="search" name="key" id="key">
-                    <input type="submit" value="Tìm kiếm">
-                        
-                    </form>
-                 
-                </li>
+
+                    <li>
+                        <form action="listcar" class="form-inline">
+                            <input type="search" name="key" id="key" required>
+                            <input class="btnSearch" type="submit" value="Tìm kiếm">
+                        </form>
+
+                    </li>
 
                 </ul>
-               
+
             </div>
             <script>
                 document.addEventListener("DOMContentLoaded", function() {
@@ -813,7 +810,6 @@
             });
         };
     </script>
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
 </body>

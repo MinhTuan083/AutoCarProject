@@ -38,7 +38,6 @@ class PDFController extends Controller
         $email = $request->input('email');
         $phone = $request->input('phone');
 
-        // Lấy thông tin đơn hàng từ session (đã lưu từ trước khi chuyển từ trang thanh toán)
         $cart = session()->get('cart', []);
 
         // Tính tổng tiền và tổng số lượng

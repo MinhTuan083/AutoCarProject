@@ -83,7 +83,7 @@ public function create(array $data)
     public function listChiNhanh()
     {
         
-            $users = ChiNhanh::paginate(1);
+            $users = ChiNhanh::paginate(5);
             return view('crud_chiNhanh.list', ['ChiNhanh' => $users]);
       
     }

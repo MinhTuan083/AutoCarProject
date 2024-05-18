@@ -3,15 +3,15 @@
 @section('content')
     <div class="container">
         <h2>Danh sách loại xe</h2>
-        <a href="{{ route('addcartype') }}" class="btn btn-primary">Thêm loại xe mới</a>
+        <a href="{{ route('addcartype') }}" class="btn btn-primary">Add new car type</a>
         <table class="table mt-3">
             <thead>
             <tr>
-                <th>Tên</th>
-                <th>Mô tả</th>
-                <th>Hình ảnh</th>
+                <th>Name</th>
+                <th>Des</th>
+                <th>image</th>
                 <th>Country</th>
-                <th>Tuy chon</th>
+                <th>Option</th>
             </tr>
             </thead>
             <tbody>
@@ -28,11 +28,11 @@
                     </td>
                     <td>{{ $carType->country }}</td>
                     <td>
-                        <a href="{{ route('edit', $carType->id) }}" class="btn btn-sm btn-primary">Sửa</a>
+                        <a href="{{ route('edit', $carType->id) }}" class="btn btn-sm btn-primary">Edit</a>
                         <form action="{{ route('deleteCar', $carType->id) }}" method="POST" style="display: inline;">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa loại xe này không?')">Xóa</button>
+                            <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Do you want delete this car types?')">Delete</button>
                         </form>
                     </td>
                 </tr>

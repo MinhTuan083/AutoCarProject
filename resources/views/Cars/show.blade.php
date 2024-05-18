@@ -34,25 +34,33 @@
                         @endif
                     </div>
                     <div class="card-footer text-center py-3">
+                        <a href="{{ route('dashboard') }}" class="btn btn-lg btn-dark">Back Home</a>
+                    </div>
+                    <div class="card-footer text-center py-3">
                         <a href="{{ route('listcar') }}" class="btn btn-lg btn-dark">Back to Cars</a>
                     </div>
-                    </div>
+                </div>
             </div>
         </div>
     </div>
     <style>
         .card {
-            border: none !important; /* Loại bỏ khung viền */
-            border-radius: 0; /* Loại bỏ bo tròn góc */
-            box-shadow: none !important; /* Loại bỏ bóng đổ */
+            border: none !important;
+            /* Loại bỏ khung viền */
+            border-radius: 0;
+            /* Loại bỏ bo tròn góc */
+            box-shadow: none !important;
+            /* Loại bỏ bóng đổ */
         }
 
         .card-body img {
-            transition: transform 0.3s ease-in-out; /* Thêm transition cho hiệu ứng mượt mà */
+            transition: transform 0.3s ease-in-out;
+            /* Thêm transition cho hiệu ứng mượt mà */
         }
 
         .card-body img:hover {
-            transform: scale(1.2); /* Kích thước của hình ảnh tăng lên 20% */
+            transform: scale(1.2);
+            /* Kích thước của hình ảnh tăng lên 20% */
         }
     </style>
 </main>
