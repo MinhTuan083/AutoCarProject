@@ -85,6 +85,83 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cars
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{{ route('addcar') }}">Add New Car</a></li>
+                        <li><a class="dropdown-item" href="{{ route('listcar') }}">List Cars</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Brands
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{{ route('addbrand') }}">Add New Brand</a></li>
+                        <li><a class="dropdown-item" href="{{ route('listbrand') }}">List Brands</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        CarTypes
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{{ route('addcar') }}">Add New CarTypes</a></li>
+                        <li><a class="dropdown-item" href="{{ route('view') }}">List CarTypes</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Employee
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{{ route('employees.create') }}">Add Employee</a></li>
+                        <li><a class="dropdown-item" href="{{ route('viewEmp') }}">List Employee</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('cart.view') }}">Cart <span class="badge badge-pill badge-danger">{{ count(session('cart', [])) }}</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Chi Nhánh
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{{ route('register-CN') }}">Thêm chi nhánh</a></li>
+                        <li><a class="dropdown-item" href="{{ route('CN.list') }}">Danh sách chi nhánh</a></li>
+                    </ul>
+                </li>
+                @guest
+                <li class="nav-item">
+                   <a class="nav-link" href="{{ route('login') }}">ListUser</a>
+                </li>
+                @else
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown ten" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Users
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{{ route('user.list') }}">List User</a></li>
+                        <li><a class="dropdown-item" href="{{ route('signout') }}">Sign out</a></li>
+                    </ul>
+                </li>
+                @endguest
+                
+                
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -107,6 +184,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
+
 
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('cart.view') }}">Cart <span class="badge badge-pill badge-danger">{{ count(session('cart', [])) }}</span></a>
