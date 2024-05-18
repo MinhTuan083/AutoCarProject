@@ -3,7 +3,7 @@
 @section('content')
 <main class="cart-view">
     <div class="container">
-        <h2 class="text-center my-4">Giỏ hàng của bạn</h2>
+        <h2 class="text-center my-4">My Cart</h2>
         @if(session('success'))
         <div class="alert alert-success">{{ session('success') }}</div>
         @endif

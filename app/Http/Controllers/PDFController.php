@@ -52,6 +52,8 @@ class PDFController extends Controller
         // Tạo file PDF từ dữ liệu hóa đơn
         $pdf = \Barryvdh\DomPDF\Facade\Pdf::loadView('pdf.report', compact('name', 'address', 'email', 'phone', 'cart', 'totalPrice', 'totalQuantity'));
 
+        // Xóa hết dữ liệu trong session
+        $request->session()->flush();
         // Tải file PDF xuống
         return $pdf->download('report.pdf');
     }
