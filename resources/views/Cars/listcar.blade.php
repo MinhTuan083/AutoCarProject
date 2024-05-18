@@ -62,7 +62,7 @@
                 </style>
                 <li >
                   <p>
-                    <form action="" class="form-inline">
+                    <form action="listcar" class="form-inline">
                     <input type="search" name="key" id="key">
                     <input type="submit" value="Tìm kiếm">
                         
