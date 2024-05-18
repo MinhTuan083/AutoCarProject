@@ -76,6 +76,14 @@ class CarController extends Controller
     }
 
     public function listCar()
+<<<<<<< HEAD
+{
+    // Lấy danh sách các xe từ cơ sở dữ liệu, sắp xếp theo created_at giảm dần và phân trang
+    $cars = Car::orderBy('created_at', 'desc')->paginate(6);
+    // Trả về view 'cars.listcar' kèm theo dữ liệu về danh sách các xe
+    return view('cars.listcar', compact('cars'));
+}
+=======
     {
         
         // Lấy danh sách các xe từ cơ sở dữ liệu
@@ -89,6 +97,7 @@ class CarController extends Controller
         // Trả về view 'cars.listcar' kèm theo dữ liệu về danh sách các xe
         return view('cars.listcar', ['cars' => $cars]);
     }
+>>>>>>> origin/master
     public function deleteCar($id)
     {
         // Tìm và xóa xe theo ID

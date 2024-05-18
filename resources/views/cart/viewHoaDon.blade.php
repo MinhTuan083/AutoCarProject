@@ -9,7 +9,7 @@
 
 @section('content')
 <div class="container">
-    <h2 class="text-center my-4">Hóa Đơn</h2>
+    <h2 class="text-center my-4">Bill</h2>
 
     <!-- Hiển thị thông tin khách hàng -->
     <div class="mt-4">
@@ -22,13 +22,13 @@
 
     <!-- Hiển thị thông tin đơn hàng -->
     <div class="mt-4">
-        <h3>Thông tin đơn hàng:</h3>
+        <h3>Order Information:</h3>
         <table class="table table-bordered mt-3">
             <thead>
                 <tr>
-                    <th>Tên sản phẩm</th>
-                    <th>Số lượng</th>
-                    <th>Đơn giá</th>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
                 </tr>
             </thead>
             <tbody>
@@ -45,8 +45,8 @@
 
     <!-- Hiển thị tổng tiền và tổng số lượng -->
     <div class="text-right mt-4">
-        <p><strong>Tổng số lượng:</strong> {{ $totalQuantity }}</p>
-        <p><strong>Tổng tiền:</strong> {{ number_format($totalPrice) }} VND</p>
+        <p><strong>Total Quantity:</strong> {{ $totalQuantity }}</p>
+        <p><strong>Total Price:</strong> {{ number_format($totalPrice) }} VND</p>
     </div>
     
     <div class="text-center mt-4">
@@ -57,8 +57,9 @@
             <input type="hidden" name="address" value="{{ $address }}">
             <input type="hidden" name="email" value="{{ $email }}">
             <input type="hidden" name="phone" value="{{ $phone }}">
+            <input type="hidden" name="cart" value="{{ $cart }}">
             <!-- Nút submit để tải xuống PDF -->
-            <button type="submit" class="btn btn-primary">Xuất hóa đơn</button>
+            <button type="submit" class="btn btn-primary">Invoicing</button>
         </form>
     </div>
 

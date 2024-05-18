@@ -28,7 +28,7 @@
             </div>
             <div class="form-group">
                 <label for="address">Địa chỉ:</label>
-                <input type="text" class="form-control" id="address" name="address">
+                <input type="text" class="form-control" id="address" name="address" required>
                 @if ($errors->has('address'))
                     <div class="text-danger">{{ $errors->first('address') }}</div>
                 @endif

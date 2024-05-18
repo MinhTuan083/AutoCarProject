@@ -2,14 +2,14 @@
 <html>
 
 <head>
-    <title>Hóa Đơn</title>
+    <title>Invoice</title>
     <style>
-        /* Thêm CSS để định dạng hóa đơn */
+        /* Add CSS to style the invoice */
         body {
             font-family: DejaVu Sans, sans-serif;
         }
 
-        .invoice-box {
+        css Copy code .invoice-box {
             max-width: 800px;
             margin: auto;
             padding: 30px;
@@ -76,11 +76,11 @@
                     <table>
                         <tr>
                             <td class="title">
-                                <h2>Hóa Đơn</h2>
+                                <h2>Invoice</h2>
                             </td>
                             <td>
-                                Ngày: {{ date('d/m/Y') }}<br>
-                                Hóa đơn số: N/A <!-- Không sử dụng biến $hoaDon->id nữa -->
+                                Date: {{ date('d/m/Y') }}<br>
+                                Invoice #: N/A <!-- Not using $hoaDon->id variable anymore -->
                             </td>
                         </tr>
                     </table>
@@ -91,8 +91,8 @@
                     <table>
                         <tr>
                             <td>
-                                {{ $name }}<br> 
-                                {{ $address }}<br> 
+                                {{ $name }}<br>
+                                {{ $address }}<br>
                                 {{ $email }}<br>
                                 {{ $phone }}
                             </td>
@@ -101,18 +101,18 @@
                 </td>
             </tr>
             <tr class="heading">
-                <td>Sản phẩm</td>
-                <td>Giá</td>
+                <td>Product</td>
+                <td>Price</td>
             </tr>
             @foreach ($cart as $item)
             <tr class="item">
                 <td>{{ $item['name'] }} x {{ $item['quantity'] }}</td>
-                <td>{{ number_format($item['price'] * $item['quantity'], 0, ',', '.') }} đ</td>
+                <td>{{ number_format($item['price'] * $item['quantity'], 0, ',', '.') }} VND</td>
             </tr>
             @endforeach
             <tr class="total">
                 <td></td>
-                <td>Tổng: N/A <!-- Không sử dụng biến $hoaDon->totalPrice nữa --></td>
+                <td>Total: N/A <!-- Not using $hoaDon->totalPrice variable anymore --></td>
             </tr>
         </table>
     </div>

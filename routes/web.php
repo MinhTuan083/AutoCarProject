@@ -15,6 +15,7 @@ use App\Models\User;
 use App\Http\Controllers\UserController;
 use App\Models\ChiNhanh;
 use App\Http\Controllers\ChiNhanhController;
+use App\Http\Controllers\CRUDInvoicesController;
 
 
 
@@ -96,6 +97,7 @@ Route::post('addcartype', [CRUDCarController::class, 'store'])->name('carsstore'
 Route::get('edit/{id}', [CRUDCarController::class, 'edit'])->name('edit');
 Route::put('update/{carType}', [CRUDCarController::class, 'update'])->name('update');
 Route::delete('deletecar/{id}', [CRUDCarController::class, 'deleteCar'])->name('deleteCar');
+Route::get('/search',  [CRUDCarController::class,'searchByName'])->name('searchByName');
 
 
 Route::get('employee', [CRUDEmployeeController::class, 'listEmp'])->name('viewEmp');
@@ -104,3 +106,6 @@ Route::post('addeployee', [CRUDEmployeeController::class, 'store'])->name('emplo
 Route::get('employees/{id}/edit', [CRUDEmployeeController::class, 'edit'])->name('employees.edit');
 Route::put('employees/{employee}', [CRUDEmployeeController::class, 'update'])->name('employees.update');
 Route::delete('delete/{id}', [CRUDEmployeeController::class, 'deleteEmp'])->name('deleteEmp');
+
+Route::get('/invoices', [CRUDInvoicesController::class,'viewInvoices'])->name('view.invoices');
+Route::delete('/invoices/{id}', [CRUDInvoicesController::class,'deleteInvoice'])->name('delete.invoice');
